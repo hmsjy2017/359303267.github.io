@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://359303267.github.io/"/>
-  <updated>2018-09-01T15:10:28.572Z</updated>
+  <updated>2018-09-01T15:11:51.929Z</updated>
   <id>https://359303267.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://359303267.github.io/kindle-01/"/>
     <id>https://359303267.github.io/kindle-01/</id>
     <published>2018-09-01T10:58:37.000Z</published>
-    <updated>2018-09-01T15:10:28.572Z</updated>
+    <updated>2018-09-01T15:11:51.929Z</updated>
     
     <summary type="html">
     
@@ -35,14 +35,16 @@
     
     </summary>
     
-      <category term="Kindle" scheme="https://359303267.github.io/categories/Kindle/"/>
+      <category term="我的Kindle" scheme="https://359303267.github.io/categories/%E6%88%91%E7%9A%84Kindle/"/>
     
     
       <category term="经验" scheme="https://359303267.github.io/tags/%E7%BB%8F%E9%AA%8C/"/>
     
       <category term="Kindle" scheme="https://359303267.github.io/tags/Kindle/"/>
     
-      <category term="瞎折腾，杂谈" scheme="https://359303267.github.io/tags/%E7%9E%8E%E6%8A%98%E8%85%BE%EF%BC%8C%E6%9D%82%E8%B0%88/"/>
+      <category term="瞎折腾" scheme="https://359303267.github.io/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
+    
+      <category term="杂谈" scheme="https://359303267.github.io/tags/%E6%9D%82%E8%B0%88/"/>
     
   </entry>
   

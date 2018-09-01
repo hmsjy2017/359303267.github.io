@@ -10,7 +10,7 @@
       
       <categories>
           
-          <category> Kindle </category>
+          <category> 我的Kindle </category>
           
       </categories>
       
@@ -21,7 +21,9 @@
             
             <tag> Kindle </tag>
             
-            <tag> 瞎折腾，杂谈 </tag>
+            <tag> 瞎折腾 </tag>
+            
+            <tag> 杂谈 </tag>
             
         </tags>
       
@@ -92,16 +94,16 @@
     </entry>
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
