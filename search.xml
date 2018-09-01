@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title>我修改PE的一点小经验</title>
+      <link href="/PE-01/"/>
+      <url>/PE-01/</url>
+      <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我觉得应该把这些经验分享出来，因为我觉得我的技术算是非常的差，基本上用的都是别人制作好的东西，我只是把他们简单的拼合在一起，事实上确是如此。下面我所说的PE是指的整个工具的集合，而非特指Win2003或者Win10PE，我又比较懒，多打几个字就不是滋味，所以PE就是那个不知道叫什么好的工具集  </p><h1 id="PE中的注册表部分"><a href="#PE中的注册表部分" class="headerlink" title="PE中的注册表部分"></a>PE中的注册表部分</h1><p>PE内核中的注册表是PE的核心部分，每个大神制作的PE内核都有他们独到的部分，可谓是百家齐放。这部分很难，网上搜集到的资料也比较少。我曾经也是有自己精简注册表的想法的，但是发现这样太耗费时间，不如直接用别人修改好的，站在巨人的肩膀上可以少费力很多。我用的就是无忧论坛<strong>wimboot</strong>大神制作好的内核，Win10x86和x64都有，而且他的注册表精简的非常到位，我觉得不错，在此表示致敬。<br>下面就是外置软件部分的注册表了，当然是用<strong>RegShot</strong>这个工具，这个工具可以非常快速方便的对比出安装软件之前和安装之后的注册表和Windows目录中文件的变化，并且生成报告文件，这样就可以讲安装式的软件变成绿色免安装版的，就可以放进PE中啦。RegShot生成的TXT报告文件其实是reg文件，可以直接修改后缀为.reg，双击就可以直接导进目录了。<br>还有一种导入reg格式注册表的方法，就是利用<strong>注册表转换工具</strong>，将reg格式的注册表文件转换成cmd格式或者inf格式，利用cmd命令就可以导入注册表了。<br>导入reg格式注册表的命令行：<br><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">regedit /s X:\\Windows\system32\RegPE.reg<br></code></pre></td></tr></table></figure></p><h1 id="GRUB引导部分"><a href="#GRUB引导部分" class="headerlink" title="GRUB引导部分"></a>GRUB引导部分</h1><p>我的PE的界面是用<code>GRUB4DOS</code>做成的，从官方下载来的GRUB4DOS运行以后是命令行版本，没点功底还真是操作不了。<br>GRUB4DOS可以加载常见的ISO、IMG格式的磁盘文件，也可以直接引导Linux内核。Linux内核要和initrd一起加载，否则引导成功也只是进入了内核而没有图形界面，只能敲bash命令。<br>懒得敲命令就写一个<strong>LST列表文件</strong>，把需要引导的文件做成一个列表，这样就省去了每次敲命令的麻烦。具体的LST语法可以参考我PE中的LST文件，很简单的，基本上就是复制粘贴一下就好。<br>所以给GRUB4DOS应用主题就是一个非常明智的选择。GRUB4DOS的主题文件在GRUB/MESSAGE文件，这个文件包含了界面的背景和倒计时等一系列控件。有人问我可不可以更改PE的背景图？当然可以！你下载一个<strong>MESSAGE编辑工具</strong>就可以更改了，而且还有很多模板哦，可以自己DIY。<br>GRUB4DOS寻找默认LST的位置是在/GURB/memu.lst，这个路径和许多<code>Linux系统</code>默认的路径是一样的，如果直接使用的话可能导致引导的是你本地的系统而非PE，所以应该修改一下默认的路径免得GRUB混淆。可以使用<strong>磁盘引导扇区修复工具</strong>中得GRUB内置命令修改工具打开PE目录的GRUB文件，将所有的<strong>menu.lst改成UDmenu.lst</strong>这样独一无二的文件名，这样就不会引起混乱。还要注意的是保存的时候千万不要选择进行GZ压缩，这样会导致GRUB4DOS出问题的，直接以UTF-8编码保存就好。因为新版本的<strong>fbinsttool</strong>会默认进行GZ压缩GRUB文件，所以不要用fbinsttool工具直接修改GRUB文件。<br>GRUB4DOS可以自动识别GZ压缩过的磁盘文件，所以把ISO或者IMG文件进行GZ压缩一下体积会减小许多哦。  </p><h1 id="UEFI引导部分"><a href="#UEFI引导部分" class="headerlink" title="UEFI引导部分"></a>UEFI引导部分</h1><p>现在的机器应该都是UEFI引导的了，发展的趋势如浪如潮哇。UEFI是个很好的趋势，因为我不用再担心MBR损坏了，也不用再考虑将哪个分区设置为主分区（MBR有主分区个数的限制，而GPT可以说没有），也可以购买3T4T的大硬盘了。就算引导文件损坏了，我只需要把引导文件拷贝进FAT32的U盘里一样可以引导进入系统，备份重要数据，所以我是非常喜欢UEFI方式的。<br>UEFI中的一个很重要的工具就是<strong>UEFIshell</strong>，就是那个壳子。shell这个东西在Linux可是神器，前提是你得会命令。用这玩意可以引导任何EFI文件，用来调试EFI再好不过了，而且它能提供你机器BIOS的原生UEFI环境。shell是一个efi文件，通过改名为bootx64.efi的方式引导它，它在引导其他文件，很方便的。但是对于不愿意敲命令的同学就非常的差劲了。<br>我PE中的UEFI引导部分的列表是用<strong>XorBoot</strong>，出自无忧论坛的Pauly大师。这个工具可以做出精美的引导界面。我才学疏漏，并且没有艺术大脑，最终只做成了这个样子：黑背景黄框框。这不是重点，我想说的是在BIOS的环境下做一个图形界面是不容易的，所以说XorBoot可谓是一个极好的工具，也是我PE的UEFI部分中的核心。  </p><h1 id="Linux部分"><a href="#Linux部分" class="headerlink" title="Linux部分"></a>Linux部分</h1><p>我PE中Linux用的是无忧大神<strong>wintoflash</strong>定制的<code>Porteus</code>，这是网友公认的比价好的小型Linux了。可惜驱动不是很全，较新的的机器上还会有兼容性问题，作者现在也不再更新了。如果大家还有什么比较好的Linux发行版的话（我是指体积比较小，界面好看，支持网络的），可以自行更换哦，也可以告知我。<br>Linux启动的话就两点。一个是内核（体积大概十几MB到几十MB），一个是initrd（体积几百兆甚至几个G）。只要这两个文件在启动器中定义好，启动基本是没有问题的。有的Linux还要在其内核后面添加一些命令，比如–noroot，用来指定启动方式的。自行添加的时候要注意这些。</p><h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>我当然是希望大家能够轻松的DIY出自己喜欢的PE。所以大家可以解包我的PE，进行研究之。不过要注意的是，切莫拿这个PE进行商用，这里面有很多的开源软件和破解软件，如果拿来商用的话，小心收到律师函罒ω罒。  </p>]]></content>
+      
+      <categories>
+          
+          <category> WinPE </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 经验 </tag>
+            
+            <tag> WinPE </tag>
+            
+            <tag> U盘启动 </tag>
+            
+            <tag> 工具集 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>一个不知道叫什么好的U盘启动工具集</title>
+      <link href="/PE/"/>
+      <url>/PE/</url>
+      <content type="html"><![CDATA[<h1 id="邀请您参加2018-06-25最新测试版体验"><a href="#邀请您参加2018-06-25最新测试版体验" class="headerlink" title="邀请您参加2018-06-25最新测试版体验"></a>邀请您参加2018-06-25最新测试版体验</h1><ol><li>它又更新了，没错，我依然不认为新的版本是完美的，但它正在走向完美的路上······  </li><li>我知道大家痛恨广告和流氓的绑定行为，所以我去掉了上个版本中唯一的2345网址推广（上个版本的2345推广只存在与内置的世界之窗中，不会向本地系统注入任何文件和行为），添加的PETools都是大家公认的绿色软件，整个工具集没有任何商业行为，你们满意吗？</li><li>这次更新只有一个测试版，因为替他版本都是根据测试版修改，所以只需要搞完整版的测试就行了。</li><li>想要体积小点？不好意思，做不到！</li><li>这玩意带office（大小也就十几MB），这对喜欢小体积的网友来说无疑会减分，但office在关键时刻对装机确实能起到很大作用(查找文档中的资料)</li><li>有人曾说PE就是用来分区，装系统用的，要联网功能干嘛？那我只能说你是小白，如果是装机员的话，联网功能会对他们起到很大作用（搭建网刻服务器或者搭建无盘服务器、临时搭建FTP互传文件）</li><li>这次Win10的PE采用无忧大神Wimboot的内核，真的非常的棒，原生支持nvme,USB3.0，网络和声音，非常的好用。</li><li>Win2003PE依然是我心如水大神的经典珍藏版，内存占用小，也非常的棒。</li><li>有任何建议，欢迎在下方留言区留言。</li></ol><h1 id="最新版的截图分享"><a href="#最新版的截图分享" class="headerlink" title="最新版的截图分享"></a>最新版的截图分享</h1><h2 id="UEFI启动下虚拟机截图（前方多图！流量绕行！！！！）"><a href="#UEFI启动下虚拟机截图（前方多图！流量绕行！！！！）" class="headerlink" title="UEFI启动下虚拟机截图（前方多图！流量绕行！！！！）"></a>UEFI启动下虚拟机截图（前方多图！流量绕行！！！！）</h2><p><img src="https://i.imgur.com/jdFT2BN.png" alt=""></p><p><img src="https://i.imgur.com/bIuKswh.png" alt=""></p><h2 id="Protrus-微型Linux系统"><a href="#Protrus-微型Linux系统" class="headerlink" title="Protrus 微型Linux系统"></a>Protrus 微型Linux系统</h2><p><img src="https://i.imgur.com/oszI3VW.png" alt=""></p><h2 id="BIOS启动下虚拟机截图"><a href="#BIOS启动下虚拟机截图" class="headerlink" title="BIOS启动下虚拟机截图"></a>BIOS启动下虚拟机截图</h2><p><img src="https://i.imgur.com/7IN5z6t.png" alt=""></p><p><img src="https://i.imgur.com/mSS1FQc.png" alt=""></p><p><img src="https://i.imgur.com/su1UxjM.png" alt=""></p><p><img src="https://i.imgur.com/S1t3sXP.png" alt=""></p><p><img src="https://i.imgur.com/a8vBsIh.png" alt=""></p><p><img src="https://i.imgur.com/D9GpGms.png" alt=""></p><h2 id="强大的PETools程序库"><a href="#强大的PETools程序库" class="headerlink" title="强大的PETools程序库"></a>强大的PETools程序库</h2><p><img src="https://i.imgur.com/TJDwbX7.png" alt=""></p><h2 id="标注的PECMD代码"><a href="#标注的PECMD代码" class="headerlink" title="标注的PECMD代码"></a>标注的PECMD代码</h2><p><img src="https://i.imgur.com/8Xg73HM.png" alt=""></p><h1 id="各版本介绍"><a href="#各版本介绍" class="headerlink" title="各版本介绍"></a>各版本介绍</h1><p>完整版包含Win2003E，Win10x64和Win10x86三个PE、微型Linux系统、AITH备份还原、ADDS无损分区、DOS工具等全部功能，支持BIOS、UEFI双启。<br>Lite版在完整版上简化而来，去除了显卡驱动、微型Linux系统、AITH备份还原和ADDS无损分区，其他不变，支持BIOS、UEFI双启。<br>核心X64版只包含Win10PEx64，支持BIOS、UEFI双启，可以通过UEFI固件的安全启动。<br>核心X86版只包含Win10PEx86，支持BIOS、UEFI双启，可以通过UEFI固件的安全启动。<br>这四个版本的PE工具库都在PETools文件夹里，可以根据需要增删。  </p><h1 id="体积占比"><a href="#体积占比" class="headerlink" title="体积占比"></a>体积占比</h1><table><thead><tr><th style="text-align:center">版本</th><th style="text-align:center">BIOS占用</th><th style="text-align:center">UEFI占用</th><th style="text-align:center">外置PETools</th><th style="text-align:center">总计占用</th></tr></thead><tbody><tr><td style="text-align:center">测试版</td><td style="text-align:center">1400MB</td><td style="text-align:center">1260MB</td><td style="text-align:center">665MB</td><td style="text-align:center">3325MB</td></tr><tr><td style="text-align:center">完整版</td><td style="text-align:center">1390MB</td><td style="text-align:center">1230MB</td><td style="text-align:center">888MB</td><td style="text-align:center">3508MB</td></tr><tr><td style="text-align:center">Lite版</td><td style="text-align:center">883MB</td><td style="text-align:center">805MB</td><td style="text-align:center">534MB</td><td style="text-align:center">2222MB</td></tr><tr><td style="text-align:center">核心x64版</td><td style="text-align:center">485MB</td><td style="text-align:center">485MB</td><td style="text-align:center">484MB</td><td style="text-align:center">1454MB</td></tr><tr><td style="text-align:center">核心x86版</td><td style="text-align:center">315MB</td><td style="text-align:center">315MB</td><td style="text-align:center">375MB</td><td style="text-align:center">1005MB</td></tr></tbody></table><h1 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h1><h2 id="2018-06-25测试版"><a href="#2018-06-25测试版" class="headerlink" title="2018-06-25测试版"></a>2018-06-25测试版</h2><p>下载地址：链接：<a href="https://eyun.baidu.com/s/3nxpJKFJ" target="_blank" rel="noopener">https://eyun.baidu.com/s/3nxpJKFJ</a> 密码：DUub<br>文件校验：<br>文件: 2018.06.25_Full.zip<br>大小: 3462075120 字节<br>修改时间: 2018年6月25日, 14:42:51<br>MD5: 5AFB3E1618984CD5041DF532758D3C5E<br>SHA1: EDB3F8D573506AF3ACE8BD66EE1FA70BBAD2ECF9<br>CRC32: F2997C26  </p><h2 id="完整版"><a href="#完整版" class="headerlink" title="完整版"></a>完整版</h2><p>下载地址：链接：<a href="https://eyun.baidu.com/s/3hsHzIdQ" target="_blank" rel="noopener">https://eyun.baidu.com/s/3hsHzIdQ</a> 密码：AWbE<br>文件校验：<br>文件: 2017.08.02_Full.zip<br>大小: 3606728223 字节<br>修改时间: 2017年8月19日, 9:56:52<br>MD5: 9BB8FB1B07FEE9FA26643BAB4CAAE60B<br>SHA1: 35B83C77EE3F30330D5ECCADA4DD8AF66461AE25<br>CRC32: 362B3EAA  </p><h2 id="Lite版"><a href="#Lite版" class="headerlink" title="Lite版"></a>Lite版</h2><p>下载地址：链接：<a href="https://eyun.baidu.com/s/3gfrIo51" target="_blank" rel="noopener">https://eyun.baidu.com/s/3gfrIo51</a> 密码：ObV5<br>文件校验：<br>文件: 2017.08.02_Lite.zip<br>大小: 2290287024 字节<br>修改时间: 2017年8月3日, 10:07:08<br>MD5: B0C755656CE95938721241B5066391B4<br>SHA1: F8035553530F1C4F9F6148199E458E2F7790FB83<br>CRC32: 26693BEB  </p><h2 id="核心x64版"><a href="#核心x64版" class="headerlink" title="核心x64版"></a>核心x64版</h2><p>下载地址：链接：<a href="https://eyun.baidu.com/s/3i5kmHDz" target="_blank" rel="noopener">https://eyun.baidu.com/s/3i5kmHDz</a> 密码：MOxg<br>文件校验：<br>文件: 2017.08.02_Core_x64.zip<br>大小: 1496330269 字节<br>修改时间: 2017年8月3日, 10:10:10<br>MD5: 8D219D2C11D076B9314147FF90D4C959<br>SHA1: 76E25502BE82774569FE740D6056646CF9494AA9<br>CRC32: 46416EC4  </p><h2 id="核心x86版"><a href="#核心x86版" class="headerlink" title="核心x86版"></a>核心x86版</h2><p>下载地址：链接：<a href="https://eyun.baidu.com/s/3c3xOaa" target="_blank" rel="noopener">https://eyun.baidu.com/s/3c3xOaa</a> 密码：r8Ld<br>文件校验：<br>文件: 2017.08.02_Core_x86.zip<br>大小: 1036783315 字节<br>修改时间: 2017年8月3日, 10:11:43<br>MD5: 1FAC04E7CEFD9D685647F9AF6FDB0634<br>SHA1: 47294916127C71F47A9C842BFFE1998CADAA3CA4<br>CRC32: C62F5384  </p><h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><h2 id="在最新的Win10-64bit-1703-15063-版本下用一键制作工具会失败，一键安装失败的可以采用手动安装方法，手动安装教程看这里，视频下载下来更清晰！需要用到的工具在这里"><a href="#在最新的Win10-64bit-1703-15063-版本下用一键制作工具会失败，一键安装失败的可以采用手动安装方法，手动安装教程看这里，视频下载下来更清晰！需要用到的工具在这里" class="headerlink" title="在最新的Win10 64bit 1703 15063 版本下用一键制作工具会失败，一键安装失败的可以采用手动安装方法，手动安装教程看这里，视频下载下来更清晰！需要用到的工具在这里"></a>在最新的Win10 64bit 1703 15063 版本下用一键制作工具会失败，一键安装失败的可以采用手动安装方法，手动安装教程看<a href="https://eyun.baidu.com/s/3pKAix8f" target="_blank" rel="noopener">这里</a>，视频下载下来更清晰！需要用到的工具在<a href="https://eyun.baidu.com/s/3o7Ox7ho" target="_blank" rel="noopener">这里</a></h2><p>下载后务必确定文件的校验码准确！</p><h1 id="正确的安装方式"><a href="#正确的安装方式" class="headerlink" title="正确的安装方式"></a>正确的安装方式</h1><ol><li>首先准备一个容量大于或等于4GB的存储设备</li><li>备份重要资料（制作过程需要抹除数据）</li><li>打开USEC文件夹里的“开始制作.exe”</li><li>选择对应的磁盘，单击“全新制作”</li><li>制作完成后，将PETools文件夹发送到你的存储设备，注意是文件夹和里面的文件，而不是只发送里面的文件</li><li>测试版已经打包了完整的视频教程哦~</li></ol><h1 id="相对于上次更新了什么？（测试版）"><a href="#相对于上次更新了什么？（测试版）" class="headerlink" title="相对于上次更新了什么？（测试版）"></a>相对于上次更新了什么？（测试版）</h1><ol><li>升级Win10PE的内核为16299，内核由无忧大神wimboot制作。这个内核非常棒，原生支持网络、声音、USB3.0和nvme，兼容性那是杠杠的。</li><li>更新部分常用软件到新版本，比如Grub2文件管理、Grub4dos、DiskGenius、UltraISO、WinNTSetup、Dism++等等。</li><li>去掉和替换了一些这辈子都可能用不到的软件，减小体积。</li><li>PE内置了一些维护系统常用的软件，这样在不加载外置工具的情况下也可以重装系统了。</li><li>修复UEFI版KonBoot不可用的问题（上个版本不能用是因为我没加驱动，哈哈哈哈哈······嗝~）</li><li>XorBoot引导界面可以引导本地Windows了。</li><li>世界之窗浏览器的flash版本换回原来的11.3版本，因为其他版本有兼容性问题。</li><li>增强XorBoot引导界面的颜色对比，能看的出来吗？</li></ol><h1 id="兼容配置（测试版）"><a href="#兼容配置（测试版）" class="headerlink" title="兼容配置（测试版）"></a>兼容配置（测试版）</h1><p>Win2003PE最低启动内存：512MB<br>Win10PE 32位版最低启动内存：1G<br>Win10PE 64位版最低启动内存：1G<br>CPU，显卡，主板不限<br>机器内存少于512MB建议使用DOS工具替代使用  </p><h1 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h1><ol><li>PE可以点击右下角回到桌面啦！</li><li>刷新Expoloer.exe在鼠标右键“打开加加”里面！</li><li>加载PETools后可以按PrtSc键进行截图！</li><li>搜索文件的话，用“文件工具”里的“Everything”要比系统自带的搜索快得多！</li><li>PE识别不到硬盘，有两种解决方案。如果是Win2003PE就进“Win2003PE蓝屏黑屏不认硬盘解决方案”看看吧。如果是Win10PE，嗯。。。。。这个可以进BIOS把硬盘模式设置为IDE模式试试，装好系统之后再改回来。</li><li>快速拷贝可以用FastCopy软件哦~</li><li>正确加载PETools的方式是保证所有磁盘根目录只有一个PETools（搜索方式是倒序盘符搜索），然后打开桌面的“加载外置程序”，等待几秒就可以了。加载PETools之后最好刷新一下Explorer.exe（当然也可以不刷新，嘿嘿···）</li></ol><h1 id="和平问答"><a href="#和平问答" class="headerlink" title="和平问答"></a>和平问答</h1><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><code class="hljs undefined">问：这个工具集有什么缺点吗？<br>答：缺点嘛···很多啊，比如不能穿越时空到1937年打小日本~<br><br>问：背景图好难看！我可以更改背景吗？<br>答：可以的，换成妹子吧，顺便把那图片也发给我好啦<br><br>问：你的PETools可以在其他PE上使用吗？<br>答：可以的，解压或挂载后用PECMD加载对应系统的ini文件就好啦<br><br>问：你的PE可以玩游戏吗？<br>答：我是不会告诉你可以的，而且还能搞核武器实验，控制美军核导弹的！<br><br>问：赞助和不赞助有什么区别？<br>答：使用上没区别，但捐助后你的心灵得到了净化，精神得到了满足，人民会因此更加和谐，国家会为此再度强盛······<br><br>问：体积太大了，能做的小点吗？我连4GB的SD卡都买不起~<br>答：不仅能大能小，还能长能短，能硬能软~<br><br>问：楼猪好厉害，能教我怎么制作PE吗？<br>答：能啊，等我找到女盆友···或者帮我买一个女朋友！<br><br>问：电脑修得好，备胎当到老 是真的吗？<br>答：佛曰：不可说，不可说啊······<br><br>问：这一年都过去了，大佬还没有女朋友？？<br>答：哈哈哈哈哈，没有！我好Happy啊！<br></code></pre></td></tr></table></figure><h1 id="版权"><a href="#版权" class="headerlink" title="版权"></a>版权</h1><p>PECMD.ini未加密，并且进行整理标注，所有配置文件皆没有版权，欢迎研究下载</p><h1 id="最后你懂滴，喵"><a href="#最后你懂滴，喵" class="headerlink" title="最后你懂滴，喵~"></a>最后你懂滴，喵~</h1><p><img src="https://i.imgur.com/5XAOYAX.jpg" alt=""></p><h1 id="那些神奇的链接"><a href="#那些神奇的链接" class="headerlink" title="那些神奇的链接"></a>那些神奇的链接</h1><p>赞助名单：<a href="http://ntdhd.icoc.me" target="_blank" rel="noopener">http://ntdhd.icoc.me</a><br>原帖地址：<a href="http://blog.csdn.net/tw359303267/article/details/74075075" target="_blank" rel="noopener">http://blog.csdn.net/tw359303267/article/details/74075075</a><br>Github：<a href="https://359303267.github.io/PE">https://359303267.github.io/PE</a><br>以前的版本在无忧论坛：<a href="http://bbs.wuyou.net/forum.php?mod=viewthread&amp;tid=378683&amp;extra=" target="_blank" rel="noopener">http://bbs.wuyou.net/forum.php?mod=viewthread&amp;tid=378683&amp;extra=</a>  </p>]]></content>
+      
+      <categories>
+          
+          <category> WinPE </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> WinPE </tag>
+            
+            <tag> U盘启动 </tag>
+            
+            <tag> 工具集 </tag>
+            
+            <tag> Windows </tag>
+            
+        </tags>
+      
+    </entry>
+    
+  
+  
+    
+    <entry>
+      <title></title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<h1 id="关于博主"><a href="#关于博主" class="headerlink" title="关于博主"></a>关于博主</h1><h2 id="为什么叫这个名字呢？因为它霸气啊！"><a href="#为什么叫这个名字呢？因为它霸气啊！" class="headerlink" title="为什么叫这个名字呢？因为它霸气啊！"></a>为什么叫这个名字呢？因为它霸气啊！</h2><p>一个什么都折腾但是又什么都折腾不好的宅，偶尔看看书，耍耍吃鸡。最喜欢的事莫过于睡觉了。</p>]]></content>
+    </entry>
+    
+    <entry>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      <content type="html"><![CDATA[]]></content>
+    </entry>
+    
+    <entry>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      <content type="html"><![CDATA[]]></content>
+    </entry>
+    
+  
+</search>
