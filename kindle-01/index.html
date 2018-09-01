@@ -82,7 +82,7 @@
     <script defer type="text/javascript" src="/js/index.js"></script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>我修改PE的一点小经验 | 小小小日天的博客 - 瞧！这里有个不知道叫什么好的小玩意！</title>
+    <title>谈谈Kindle这个玩意儿 | 小小小日天的博客 - 瞧！这里有个不知道叫什么好的小玩意！</title>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN"  data-spy="scroll" data-target=".list-group">
     
@@ -131,7 +131,7 @@
   
   <article class="post-article card" itemscope itemtype="http://schema.org/Article">
     <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="https://359303267.github.io/PE-01/">
+      <link itemprop="mainEntityOfPage" href="https://359303267.github.io/kindle-01/">
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
        <meta itemprop="name" content="小小小日天">
        <meta itemprop="description" content="">
@@ -142,21 +142,13 @@
       </span>
     </div>
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">我修改PE的一点小经验</h1>
+      <h1 class="post-title" itemprop="name headline">谈谈Kindle这个玩意儿</h1>
       <div class="post-meta">
         
         <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-08-31T17:44:57+08:00">2018-08-31 17:44:57</time></span>
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-09-01T18:58:37+08:00">2018-09-01 18:58:37</time></span>
         </span>
         
-        
-        
-        <span class="post-meta-divider divider">|</span>
-        
-        <span class="post-categories">
-          
-          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/WinPE/" itemprop="url" rel="index"><span itemprop="name">WinPE</span></a></span>
-        </span>
         
         
         
@@ -164,30 +156,35 @@
       </div>
     </header>
     <main class="post-main" itemprop="articleBody">
-      <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我觉得应该把这些经验分享出来，因为我觉得我的技术算是非常的差，基本上用的都是别人制作好的东西，我只是把他们简单的拼合在一起，事实上确是如此。下面我所说的PE是指的整个工具的集合，而非特指Win2003或者Win10PE，我又比较懒，多打几个字就不是滋味，所以PE就是那个不知道叫什么好的工具集  </p>
-<h1 id="PE中的注册表部分"><a href="#PE中的注册表部分" class="headerlink" title="PE中的注册表部分"></a>PE中的注册表部分</h1><p>PE内核中的注册表是PE的核心部分，每个大神制作的PE内核都有他们独到的部分，可谓是百家齐放。这部分很难，网上搜集到的资料也比较少。我曾经也是有自己精简注册表的想法的，但是发现这样太耗费时间，不如直接用别人修改好的，站在巨人的肩膀上可以少费力很多。我用的就是无忧论坛<strong>wimboot</strong>大神制作好的内核，Win10x86和x64都有，而且他的注册表精简的非常到位，我觉得不错，在此表示致敬。<br>下面就是外置软件部分的注册表了，当然是用<strong>RegShot</strong>这个工具，这个工具可以非常快速方便的对比出安装软件之前和安装之后的注册表和Windows目录中文件的变化，并且生成报告文件，这样就可以讲安装式的软件变成绿色免安装版的，就可以放进PE中啦。RegShot生成的TXT报告文件其实是reg文件，可以直接修改后缀为.reg，双击就可以直接导进目录了。<br>还有一种导入reg格式注册表的方法，就是利用<strong>注册表转换工具</strong>，将reg格式的注册表文件转换成cmd格式或者inf格式，利用cmd命令就可以导入注册表了。<br>导入reg格式注册表的命令行：<br><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">regedit /s X:\\Windows\system32\RegPE.reg<br></code></pre></td></tr></table></figure></p>
-<h1 id="GRUB引导部分"><a href="#GRUB引导部分" class="headerlink" title="GRUB引导部分"></a>GRUB引导部分</h1><p>我的PE的界面是用<code>GRUB4DOS</code>做成的，从官方下载来的GRUB4DOS运行以后是命令行版本，没点功底还真是操作不了。<br>GRUB4DOS可以加载常见的ISO、IMG格式的磁盘文件，也可以直接引导Linux内核。Linux内核要和initrd一起加载，否则引导成功也只是进入了内核而没有图形界面，只能敲bash命令。<br>懒得敲命令就写一个<strong>LST列表文件</strong>，把需要引导的文件做成一个列表，这样就省去了每次敲命令的麻烦。具体的LST语法可以参考我PE中的LST文件，很简单的，基本上就是复制粘贴一下就好。<br>所以给GRUB4DOS应用主题就是一个非常明智的选择。GRUB4DOS的主题文件在GRUB/MESSAGE文件，这个文件包含了界面的背景和倒计时等一系列控件。有人问我可不可以更改PE的背景图？当然可以！你下载一个<strong>MESSAGE编辑工具</strong>就可以更改了，而且还有很多模板哦，可以自己DIY。<br>GRUB4DOS寻找默认LST的位置是在/GURB/memu.lst，这个路径和许多<code>Linux系统</code>默认的路径是一样的，如果直接使用的话可能导致引导的是你本地的系统而非PE，所以应该修改一下默认的路径免得GRUB混淆。可以使用<strong>磁盘引导扇区修复工具</strong>中得GRUB内置命令修改工具打开PE目录的GRUB文件，将所有的<strong>menu.lst改成UDmenu.lst</strong>这样独一无二的文件名，这样就不会引起混乱。还要注意的是保存的时候千万不要选择进行GZ压缩，这样会导致GRUB4DOS出问题的，直接以UTF-8编码保存就好。因为新版本的<strong>fbinsttool</strong>会默认进行GZ压缩GRUB文件，所以不要用fbinsttool工具直接修改GRUB文件。<br>GRUB4DOS可以自动识别GZ压缩过的磁盘文件，所以把ISO或者IMG文件进行GZ压缩一下体积会减小许多哦。  </p>
-<h1 id="UEFI引导部分"><a href="#UEFI引导部分" class="headerlink" title="UEFI引导部分"></a>UEFI引导部分</h1><p>现在的机器应该都是UEFI引导的了，发展的趋势如浪如潮哇。UEFI是个很好的趋势，因为我不用再担心MBR损坏了，也不用再考虑将哪个分区设置为主分区（MBR有主分区个数的限制，而GPT可以说没有），也可以购买3T4T的大硬盘了。就算引导文件损坏了，我只需要把引导文件拷贝进FAT32的U盘里一样可以引导进入系统，备份重要数据，所以我是非常喜欢UEFI方式的。<br>UEFI中的一个很重要的工具就是<strong>UEFIshell</strong>，就是那个壳子。shell这个东西在Linux可是神器，前提是你得会命令。用这玩意可以引导任何EFI文件，用来调试EFI再好不过了，而且它能提供你机器BIOS的原生UEFI环境。shell是一个efi文件，通过改名为bootx64.efi的方式引导它，它在引导其他文件，很方便的。但是对于不愿意敲命令的同学就非常的差劲了。<br>我PE中的UEFI引导部分的列表是用<strong>XorBoot</strong>，出自无忧论坛的Pauly大师。这个工具可以做出精美的引导界面。我才学疏漏，并且没有艺术大脑，最终只做成了这个样子：黑背景黄框框。这不是重点，我想说的是在BIOS的环境下做一个图形界面是不容易的，所以说XorBoot可谓是一个极好的工具，也是我PE的UEFI部分中的核心。  </p>
-<h1 id="Linux部分"><a href="#Linux部分" class="headerlink" title="Linux部分"></a>Linux部分</h1><p>我PE中Linux用的是无忧大神<strong>wintoflash</strong>定制的<code>Porteus</code>，这是网友公认的比价好的小型Linux了。可惜驱动不是很全，较新的的机器上还会有兼容性问题，作者现在也不再更新了。如果大家还有什么比较好的Linux发行版的话（我是指体积比较小，界面好看，支持网络的），可以自行更换哦，也可以告知我。<br>Linux启动的话就两点。一个是内核（体积大概十几MB到几十MB），一个是initrd（体积几百兆甚至几个G）。只要这两个文件在启动器中定义好，启动基本是没有问题的。有的Linux还要在其内核后面添加一些命令，比如–noroot，用来指定启动方式的。自行添加的时候要注意这些。</p>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>我当然是希望大家能够轻松的DIY出自己喜欢的PE。所以大家可以解包我的PE，进行研究之。不过要注意的是，切莫拿这个PE进行商用，这里面有很多的开源软件和破解软件，如果拿来商用的话，小心收到律师函罒ω罒。  </p>
-
+      <h1 id="Kindle只能看书"><a href="#Kindle只能看书" class="headerlink" title="Kindle只能看书"></a>Kindle只能看书</h1><ul>
+<li>有人问我，你买这个东西干嘛？我说看书啊。那人鄙夷：手机还看不开你了？也许在他看来花几百块钱买这个东西只能看书，其他毫无用处，用手机，用电脑还不是一样看么？对，Kindle只能看书，就像是为喜爱阅读的人专门定制的机器，也许在别人眼中Kindle是个毫无用处的东西，但在爱读书的人眼中，它是个宝。</li>
+<li>我现在有点后悔为什么没有早点买Kindle呢？这样就可以看更多的书了。想想去年我连一本东野圭吾的《假面饭店》都没有读完，倒是拿它压了几次泡面，心中不免唏嘘。</li>
+<li>读书可以干什么？这个问题我回答不了，我也许只是为了追求一份精神上的满足，也许只是为了吹嘘自己看了多少多少书。我也不知道自己看的书中有多少进了脑子，就当是寻找一份乐趣吧，就像别人玩PS、打麻将、刷抖音一样的找乐子。</li>
+<li>在淘宝上下单Kindle以后的每分每秒不在激动着，甚至在到货的前夜还失眠了。想想自己就要成为一个学识渊博的人了，心中还真是有一丢丢小激动。</li>
+</ul>
+<h1 id="关于盗版"><a href="#关于盗版" class="headerlink" title="关于盗版"></a>关于盗版</h1><ul>
+<li>我觉得还是不要下载盗版书的好，因为盗版的书不花钱呐，没有投入你就会不珍惜，也许下载了几十本乃至几个GB的书到最后一本都没有看完。我当然不是全盘否定盗版，毕竟盗版也是可以推动经济发展的。如果实在是囊中羞涩的话，下载几本盗版书也可以，等到有了钱以后在买回来收藏也不错嘛~</li>
+<li>读盗版就失去了亚马逊对这本书的服务，不能在线更新，没有X-Ray，甚至没有封面，不能推送到各个客户端。</li>
+</ul>
+<h1 id="一些使用Kindle的小小经验"><a href="#一些使用Kindle的小小经验" class="headerlink" title="一些使用Kindle的小小经验"></a>一些使用Kindle的小小经验</h1><ul>
+<li>开飞行模式比较省电，如果打开wifi的话，是不可能达到官方所说的<em>一次充电可以使用数周</em>的。</li>
+<li>邮箱推送真的很方便，格式化Kindle以后还可以在同步回来，这是网上所卖的不能绑定账号的机器没有的功能，也是亚马逊优质的服务之一。</li>
+<li>打开屏保广告。有人不喜欢广告，千方百计的想要关掉。我认为开着屏保广告可以增加对书本的认知，知道这本书原来是写这个的。</li>
+<li>在搜索框输入下面的命令即可关闭自动待机，在摘抄文字的时候十分有用。摘抄完毕重启Kindle即可恢复</li>
+</ul>
+<figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">~dm<br></code></pre></td></tr></table></figure>
+<ul>
+<li>没有必要越狱，现在官方的固件可以满足阅读的需要（除了看PDF，但是PDF有一部分是有mobi版的），折腾越狱的话会很耗费时间。现在Kindle越狱的进度缓慢，新版本的固件没有办法越狱，估计要等半年左右吧。</li>
+<li>推荐一个网站：<a href="https://bookfere.com" target="_blank" rel="noopener">书伴(原Kindle伴侣)</a><br>里面有很多优质的资源以及关于Kindle的技术资料。</li>
+<li>如果你真的想研究Kindle固件······好吧，用<code>KindleTool</code>这个工具可以解包Kindle的固件供你研究。<code>KindleTool</code>下载可以到<strong>Mobileread</strong>论坛。</li>
+<li>Kindle想安装安卓系统？大哥，咱还是好好看书吧······<a href="http://kdroid.org" target="_blank" rel="noopener">http://kdroid.org</a>这个网址可以下载安卓固件，不过安装方法比较麻烦，需要有点专业知识。</li>
+</ul>
+<h1 id="听首歌吧"><a href="#听首歌吧" class="headerlink" title="听首歌吧"></a>听首歌吧</h1><ul>
+<li>最近听到一首歌确实不错的：许巍《我的爱》<br>老许好久没出过新的专辑了，这首歌也是继《第三极》之后至今出的唯一一张单曲，非常不错的。许巍和他的团队们正在越来越好，以后会更好。</li>
+</ul>
+<center><iframe src="//player.bilibili.com/player.html?aid=30117734&cid=53144506&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" width="640" height="430" allowfullscreen="true"> </iframe></center>
     </main>
     <footer class="post-footer">
-      
-      <div class="post-tags">
-        
-        
-        
-        
-        <a class="post-tag button" href="/tags/经验/" style="background: #fc6423;" rel="tag"><i class="fas fa-tags"></i>经验</a>
-        
-        <a class="post-tag button" href="/tags/WinPE/" style="background: #a3bb54;" rel="tag"><i class="fas fa-tags"></i>WinPE</a>
-        
-        <a class="post-tag button" href="/tags/U盘启动/" style="background: #47aaff;" rel="tag"><i class="fas fa-tags"></i>U盘启动</a>
-        
-        <a class="post-tag button" href="/tags/工具集/" style="background: #fc6423;" rel="tag"><i class="fas fa-tags"></i>工具集</a>
-        
-      </div>
       
     </footer>
   </article>
@@ -196,12 +193,10 @@
   <div class="post-nav">
     <div class="post-nav-next post-nav-item">
       
-      <a href="/PE/" rel="next" title="一个不知道叫什么好的U盘启动工具集"><i class="fas fa-angle-left"></i><span class="nav-title">一个不知道叫什么好的U盘启动工具集</span></a>
+      <a href="/PE-01/" rel="next" title="我修改PE的一点小经验"><i class="fas fa-angle-left"></i><span class="nav-title">我修改PE的一点小经验</span></a>
       
     </div>
     <div class="post-nav-prev post-nav-item">
-      
-      <a href="/kindle-01/" rel="prev" title="谈谈Kindle这个玩意儿"><span class="nav-title">谈谈Kindle这个玩意儿</span><i class="fas fa-angle-right"></i></a>
       
     </div>
   </div>
@@ -228,7 +223,7 @@
       "client_secret": "ace274973f899620e005999e7b236e0580b75a2e",
       "no_comment": "这个页面还没有评论，现在就去评论吧！",
       "go_to_comment": "去评论",
-      "issue_title": "我修改PE的一点小经验",
+      "issue_title": "谈谈Kindle这个玩意儿",
       "btn_class": "button",
       "comments_target": "#comment-thread"
     });
@@ -322,7 +317,7 @@
 <hr>
 <div class="post-toc sidebar-item" id="toc-div">
   <div><i class="fas fa-list-ol"></i>文章目录</div>
-  <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-1"><a class="list-group-item toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="list-group-item toc-link" href="#PE中的注册表部分"><span class="toc-text">PE中的注册表部分</span></a></li><li class="toc-item toc-level-1"><a class="list-group-item toc-link" href="#GRUB引导部分"><span class="toc-text">GRUB引导部分</span></a></li><li class="toc-item toc-level-1"><a class="list-group-item toc-link" href="#UEFI引导部分"><span class="toc-text">UEFI引导部分</span></a></li><li class="toc-item toc-level-1"><a class="list-group-item toc-link" href="#Linux部分"><span class="toc-text">Linux部分</span></a></li><li class="toc-item toc-level-1"><a class="list-group-item toc-link" href="#最后"><span class="toc-text">最后</span></a></li></ol></div>
+  <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-1"><a class="list-group-item toc-link" href="#Kindle只能看书"><span class="toc-text">Kindle只能看书</span></a></li><li class="toc-item toc-level-1"><a class="list-group-item toc-link" href="#关于盗版"><span class="toc-text">关于盗版</span></a></li><li class="toc-item toc-level-1"><a class="list-group-item toc-link" href="#一些使用Kindle的小小经验"><span class="toc-text">一些使用Kindle的小小经验</span></a></li><li class="toc-item toc-level-1"><a class="list-group-item toc-link" href="#听首歌吧"><span class="toc-text">听首歌吧</span></a></li></ol></div>
 </div>
 
 
