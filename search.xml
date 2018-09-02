@@ -90,7 +90,7 @@
       <title>404</title>
       <link href="/404.html"/>
       <url>/404.html</url>
-      <content type="html"><![CDATA[<h1 id="2342353245234535"><a href="#2342353245234535" class="headerlink" title="2342353245234535"></a>2342353245234535</h1>]]></content>
+      <content type="html"><![CDATA[<center><br># 404<br><br>## 页面不存在的呦~<br><br><img src="/404/404.gif" alt="404"><br><br>### <a href="https://359303267.github.io">点击这里返回博客首页</a><br><br></center>]]></content>
     </entry>
     
     <entry>
@@ -101,16 +101,16 @@
     </entry>
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
