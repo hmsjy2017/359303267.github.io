@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://359303267.github.io/"/>
-  <updated>2018-09-02T04:50:11.866Z</updated>
+  <updated>2018-09-02T14:28:53.136Z</updated>
   <id>https://359303267.github.io/</id>
   
   <author>
@@ -17,11 +17,44 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>用好fastboot命令，刷机加锁不用再找工具！</title>
+    <link href="https://359303267.github.io/fastboot-01/"/>
+    <id>https://359303267.github.io/fastboot-01/</id>
+    <published>2018-09-02T14:14:15.000Z</published>
+    <updated>2018-09-02T14:28:53.136Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;手机刷机我想很多人都折腾过吧，我想大多数人都是去找对应品牌的专用刷机工具。其实现在很多手机都有fastboot模式（可以重启到Bootloader进入），这是可以说是一种快速通用的刷机模式，那么我们通过fastboot这个工具就可以对手机进行刷写了。fastbo
+        
+      
+    
+    </summary>
+    
+      <category term="经验分享" scheme="https://359303267.github.io/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="经验" scheme="https://359303267.github.io/tags/%E7%BB%8F%E9%AA%8C/"/>
+    
+      <category term="瞎折腾" scheme="https://359303267.github.io/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
+    
+      <category term="fastboot" scheme="https://359303267.github.io/tags/fastboot/"/>
+    
+      <category term="刷机" scheme="https://359303267.github.io/tags/%E5%88%B7%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>谈谈Kindle这个玩意儿</title>
     <link href="https://359303267.github.io/kindle-01/"/>
     <id>https://359303267.github.io/kindle-01/</id>
     <published>2018-09-01T10:58:37.000Z</published>
-    <updated>2018-09-02T04:50:11.866Z</updated>
+    <updated>2018-09-02T14:58:45.040Z</updated>
     
     <summary type="html">
     
@@ -40,9 +73,9 @@
     
       <category term="经验" scheme="https://359303267.github.io/tags/%E7%BB%8F%E9%AA%8C/"/>
     
-      <category term="Kindle" scheme="https://359303267.github.io/tags/Kindle/"/>
-    
       <category term="瞎折腾" scheme="https://359303267.github.io/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
+    
+      <category term="Kindle" scheme="https://359303267.github.io/tags/Kindle/"/>
     
       <category term="杂谈" scheme="https://359303267.github.io/tags/%E6%9D%82%E8%B0%88/"/>
     
@@ -53,7 +86,7 @@
     <link href="https://359303267.github.io/PE-01/"/>
     <id>https://359303267.github.io/PE-01/</id>
     <published>2018-08-31T09:44:57.000Z</published>
-    <updated>2018-08-31T13:19:55.779Z</updated>
+    <updated>2018-09-02T14:44:06.782Z</updated>
     
     <summary type="html">
     
@@ -85,7 +118,7 @@
     <link href="https://359303267.github.io/PE/"/>
     <id>https://359303267.github.io/PE/</id>
     <published>2018-06-25T07:47:35.000Z</published>
-    <updated>2018-08-31T13:23:22.753Z</updated>
+    <updated>2018-09-02T14:41:14.907Z</updated>
     
     <summary type="html">
     
