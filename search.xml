@@ -102,9 +102,9 @@
             
             <tag> 经验 </tag>
             
-            <tag> 瞎折腾 </tag>
-            
             <tag> Kindle </tag>
+            
+            <tag> 瞎折腾 </tag>
             
             <tag> 杂谈 </tag>
             
@@ -150,17 +150,17 @@
     </entry>
     
     <entry>
+      <title></title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<h1 id="关于博主-amp-各种问题"><a href="#关于博主-amp-各种问题" class="headerlink" title="关于博主&amp;各种问题 "></a><center>关于博主&amp;各种问题 </center></h1><h2 id="为什么叫这个名字呢？因为它霸气啊！"><a href="#为什么叫这个名字呢？因为它霸气啊！" class="headerlink" title="为什么叫这个名字呢？因为它霸气啊！"></a>为什么叫这个名字呢？因为它霸气啊！</h2><p>还在睡梦中的博主：一个什么都折腾但是又什么都折腾不好的宅，偶尔看看书，耍耍吃鸡。最喜欢的事莫过于睡觉了。  </p><h2 id="为什么不能评论文章呢？"><a href="#为什么不能评论文章呢？" class="headerlink" title="为什么不能评论文章呢？"></a>为什么不能评论文章呢？</h2><p>用<code>GitHub</code>账号登录就可以了哦  </p><h2 id="访问速度好慢哦···"><a href="#访问速度好慢哦···" class="headerlink" title="访问速度好慢哦···"></a>访问速度好慢哦···</h2><p>国内用<code>Coding Pages</code>访问速度比较快，国外用<code>Github Pages</code>访问速度比较快，可以在 <em>社交链接</em> 里面进行切换哦~_~  </p>]]></content>
+    </entry>
+    
+    <entry>
       <title>categories</title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
       <content type="html"><![CDATA[]]></content>
-    </entry>
-    
-    <entry>
-      <title></title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<h1 id="关于博主-amp-各种问题"><a href="#关于博主-amp-各种问题" class="headerlink" title="关于博主&amp;各种问题"></a>关于博主&amp;各种问题</h1><h2 id="为什么叫这个名字呢？因为它霸气啊！"><a href="#为什么叫这个名字呢？因为它霸气啊！" class="headerlink" title="为什么叫这个名字呢？因为它霸气啊！"></a>为什么叫这个名字呢？因为它霸气啊！</h2><p>一个什么都折腾但是又什么都折腾不好的宅，偶尔看看书，耍耍吃鸡。最喜欢的事莫过于睡觉了。</p><h2 id="为什么不能评论文章呢？"><a href="#为什么不能评论文章呢？" class="headerlink" title="为什么不能评论文章呢？"></a>为什么不能评论文章呢？</h2><p>用<code>GitHub</code>账号登录就可以了哦</p><h2 id="访问速度好慢哦···"><a href="#访问速度好慢哦···" class="headerlink" title="访问速度好慢哦···"></a>访问速度好慢哦···</h2><p>国内用<code>Coding Pages</code>访问速度比较快，国外用<code>Github Pages</code>访问速度比较快，可以在社交链接里面进行切换哦~_~</p>]]></content>
     </entry>
     
     <entry>
