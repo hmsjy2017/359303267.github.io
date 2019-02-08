@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://359303267.github.io/"/>
-  <updated>2019-01-13T06:31:59.479Z</updated>
+  <updated>2019-02-08T11:00:03.316Z</updated>
   <id>https://359303267.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Floppy 内核关闭背光调节器的方法</title>
-    <link href="https://359303267.github.io/FloppyKernel-01/"/>
-    <id>https://359303267.github.io/FloppyKernel-01/</id>
-    <published>2019-01-12T14:16:45.000Z</published>
-    <updated>2019-01-13T06:31:59.479Z</updated>
+    <title>Floppy内核关闭温控教程</title>
+    <link href="https://359303267.github.io/FloppyKernel-02/"/>
+    <id>https://359303267.github.io/FloppyKernel-02/</id>
+    <published>2019-02-08T09:41:13.000Z</published>
+    <updated>2019-02-08T11:00:03.316Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,40 @@
       
         
         
-          &lt;h1 id=&quot;Floppy-内核关闭背光调节器的方法&quot;&gt;&lt;a href=&quot;#Floppy-内核关闭背光调节器的方法&quot; class=&quot;headerlink&quot; title=&quot;Floppy 内核关闭背光调节器的方法&quot;&gt;&lt;/a&gt;Floppy
+          &lt;ul&gt;
+&lt;li&gt;按照上一篇&lt;a href=&quot;/FloppyKernel-01&quot;&gt;Floppy
+        
+      
+    
+    </summary>
+    
+      <category term="笔记分享" scheme="https://359303267.github.io/categories/%E7%AC%94%E8%AE%B0%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="小米5" scheme="https://359303267.github.io/tags/%E5%B0%8F%E7%B1%B35/"/>
+    
+      <category term="内核" scheme="https://359303267.github.io/tags/%E5%86%85%E6%A0%B8/"/>
+    
+      <category term="折腾" scheme="https://359303267.github.io/tags/%E6%8A%98%E8%85%BE/"/>
+    
+      <category term="刷机" scheme="https://359303267.github.io/tags/%E5%88%B7%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Floppy 内核关闭背光调节器的方法</title>
+    <link href="https://359303267.github.io/FloppyKernel-01/"/>
+    <id>https://359303267.github.io/FloppyKernel-01/</id>
+    <published>2019-01-12T14:16:45.000Z</published>
+    <updated>2019-02-08T10:58:35.813Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;这是个假的二级标题&quot;&gt;&lt;a href=&quot;#这是个假的二级标题&quot; class=&quot;headerlink&quot;
         
       
     

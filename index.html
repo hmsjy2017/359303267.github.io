@@ -129,6 +129,77 @@
   
   <article class="index-article card" itemscope itemtype="http://schema.org/Article">
     <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="https://359303267.github.io/FloppyKernel-02/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <meta itemprop="name" content="小小小日天">
+        <meta itemprop="description" content="当家门在开启时，我会向故乡顶礼——许巍">
+        <meta itemprop="image" content="/images/avatar.png">
+      </span>
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+        <meta itemprop="name" content="小小小日天的博客">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+        <a class="post-title-link post-title-link-external" href="/FloppyKernel-02/" itemprop="url">Floppy内核关闭温控教程</a>
+      </h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-02-08T17:41:13+08:00">2019-02-08 17:41:13</time></span>
+        </span>
+        
+        
+        
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-categories">
+          
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/笔记分享/" itemprop="url" rel="index"><span itemprop="name">笔记分享</span></a></span>
+        </span>
+        
+        
+        
+        
+      </div>
+    </header>
+    <main class="post-main" itemprop="articleBody">
+      
+      <ul>
+<li>按照上一篇<a href="/FloppyKernel-01">Floppy 内核关闭背光调节器的方法</a>介绍的方法，我们直接打开<strong>ramdisk</strong>目录里的<strong>init.floppy.rc</strong>文件，我们开始修改脚本。  </li>
+<li>我们可以看到类似这种的配置，这些数据便是Floppy内核的温控配置  </li>
+</ul>
+<p><img src="/images/FloppyKernel-02/01.png" alt="">  </p>
+<ul>
+<li>还要注意这里，这两个<em>on boot</em>和<em>on charger</em>分别代表启动时和充电时的状态，所以如果要修改启动时的温度控制代码，就修改<em>on boot</em>下面的，同理，想要修改充电时的温度控制代码，就修改<em>on charger</em>下面的。  </li>
+</ul>
+<p><img src="/images/FloppyKernel-02/02.png" alt=""></p>
+<ul>
+<li>
+      
+    </main>
+    <footer class="post-footer">
+      
+      <div class="post-tags">
+        
+        
+        
+        
+        <a class="post-tag button" href="/tags/小米5/" style="background: #fc6423;" rel="tag"><i class="fas fa-tags"></i>小米5</a>
+        
+        <a class="post-tag button" href="/tags/内核/" style="background: #a3bb54;" rel="tag"><i class="fas fa-tags"></i>内核</a>
+        
+        <a class="post-tag button" href="/tags/折腾/" style="background: #47aaff;" rel="tag"><i class="fas fa-tags"></i>折腾</a>
+        
+        <a class="post-tag button" href="/tags/刷机/" style="background: #fc6423;" rel="tag"><i class="fas fa-tags"></i>刷机</a>
+        
+      </div>
+      
+    </footer>
+  </article>
+  
+  <article class="index-article card" itemscope itemtype="http://schema.org/Article">
+    <div class="post-block">
       <link itemprop="mainEntityOfPage" href="https://359303267.github.io/FloppyKernel-01/">
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
         <meta itemprop="name" content="小小小日天">
@@ -165,8 +236,8 @@
     </header>
     <main class="post-main" itemprop="articleBody">
       
-      <h1 id="Floppy-内核关闭背光调节器的方法"><a href="#Floppy-内核关闭背光调节器的方法" class="headerlink" title="Floppy 内核关闭背光调节器的方法"></a>Floppy 内核关闭背光调节器的方法</h1><hr>
-<h2 id="这是个假的二级标题"><a href="#这是个假的二级标题" class="headerlink" title="这是个假的二级标题"></a>这是个假的二级标题</h2><p>用了两年的<code>小米5</code>逐渐老了，新游戏也拉不动了，就去找找有没有什么能流畅吃鸡的方法。<br>然后啊，，，就找到了这个<code>Floppy</code>超频的内核，可以将820这个渣U的大核拉到2.2GHz，小核拉到1.8GHz，简直比满血版820都厉害啊，并且好像还没有温控，嘿嘿嘿（在内核调校APP里没有发现温控选项，在System\etc里也没有发现温控文件）😏<br>然而发现了另外一个问题，就是在升级到了<code>MIUI10.2</code>（安卓O）之后，滑动亮度条的时候会出现跳变
+      <h1 id="这是个假的二级标题"><a href="#这是个假的二级标题" class="headerlink" title="这是个假的二级标题"></a>这是个假的二级标题</h1><p>用了两年的<code>小米5</code>逐渐老了，新游戏也拉不动了，就去找找有没有什么能流畅吃鸡的方法。<br>然后啊，，，就找到了这个<code>Floppy</code>超频的内核，可以将820这个渣U的大核拉到2.2GHz，小核拉到1.8GHz，简直比满血版820都厉害啊，并且好像还没有温控，嘿嘿嘿（在内核调校APP里没有发现温控选项，在System\etc里也没有发现温控文件）😏<br>然而发现了另外一个问题，就是在升级到了<code>MIUI10.2</code>（安卓O）之后，滑动亮度条的时候会出现跳变的现象，亮度从一个亮度一下子调到另外一个亮度，很难受。。。。(╯﹏╰)<br>没错，在内核调校里把内核的背光调节器关闭，然后使用系统自带的亮度调节就好了。然后我就想能不能直接改一下内核，让它不用每次开机都要进APP里手动关闭呢。<br>（所以就找到了╮(╯_╰)╭）</p>
+<h
       
     </main>
     <footer class="post-footer">
@@ -560,7 +631,7 @@
     
     <div class="archives-count">
       <div class="site-count-title">归档</div>
-      <div><a href="/archives/">6</a></div>
+      <div><a href="/archives/">7</a></div>
     </div>
     
     
