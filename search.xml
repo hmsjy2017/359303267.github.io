@@ -6,7 +6,7 @@
       <title>用PCB板做一把尺子</title>
       <link href="/PCB_Ruler/"/>
       <url>/PCB_Ruler/</url>
-      <content type="html"><![CDATA[<h1 id="信仰"><a href="#信仰" class="headerlink" title="信仰"></a>信仰</h1><p>前些天在某宝上发现了刻有电子专业信仰的尺子，做工不错，上面不仅有mm，mil这样的常用单位，还有各种元器件的封装和焊盘，用沉金工艺做的，简直是又好看又使用。<br>没错，又是没钱，正好自己刚考了CAED认证，决定画一个自己的信仰。<br>正好赶上某PCB打样的厂家放出5块钱打样还包邮的优惠，连夜赶出两个图纸。绿色阻焊和黑色阻焊各打了两版，花了20个大洋，这波羊毛薅的还行哈~<br>刻度我是放置的焊盘，这样做PCB的时候刻度可以喷锡保护，还耐磨。<br>下面直接放置器件就好了，原理图都不用画，这可简单多了。<br>免费为厂家打个广告：<br>厂家的链接：<a href="https://www.sz-jlc.com/" target="_blank" rel="noopener">嘉立创</a></p><h1 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h1><p><img src="/images/PCB_Ruler/Snipaste_2019-05-09_12-30-39.png" alt=""></p><p><img src="/images/PCB_Ruler/Snipaste_2019-05-09_12-30-58.png" alt=""></p><p><img src="/images/PCB_Ruler/Snipaste_2019-05-09_12-31-12.png" alt=""></p><p><img src="/images/PCB_Ruler/Snipaste_2019-05-09_12-31-27.png" alt=""></p><p><img src="/images/PCB_Ruler/Snipaste_2019-05-09_12-31-42.png" alt=""></p><p><img src="/images/PCB_Ruler/Snipaste_2019-05-09_12-31-56.png" alt=""></p><h1 id="实物图"><a href="#实物图" class="headerlink" title="实物图"></a>实物图</h1><p><img src="/images/PCB_Ruler/IMG_20190509_124609.jpg" alt=""></p><p><img src="/images/PCB_Ruler/IMG_20190507_134210.jpg" alt=""></p><p>实物到手后手感还是不错了，黑色阻焊表面是磨砂的，手感非常好。<br>以后有钱了，就打个沉金的，然后收藏，哈哈~</p><h1 id="PS"><a href="#PS" class="headerlink" title="PS:"></a>PS:</h1><p>当然大部分尺子都送给我们班妹子了，果然还是把东西分享给被人看到别人快乐时的快乐要比自己得到东西时的快乐更要快乐˚‧<em>♡ॢ˃̶̤̀◡˂̶̤́♡ॢ</em>‧˚</p><h1 id="PCB文件"><a href="#PCB文件" class="headerlink" title="PCB文件"></a>PCB文件</h1><p>现将PCB文件分享出来，水平不高见谅。<br>链接：<a href="/files/PCB_Ruler/1.zip">本地文件</a></p>]]></content>
+      <content type="html"><![CDATA[<h1 id="信仰"><a href="#信仰" class="headerlink" title="信仰"></a>信仰</h1><p>前些天在某宝上发现了刻有电子专业信仰的尺子，做工不错，上面不仅有mm，mil这样的常用单位，还有各种元器件的封装和焊盘，用沉金工艺做的，简直是又好看又使用。<br>没错，又是没钱，正好自己刚考了CAED认证，决定画一个自己的信仰。<br>正好赶上某PCB打样的厂家放出5块钱打样还包邮的优惠，连夜赶出两个图纸。绿色阻焊和黑色阻焊各打了两版，花了20个大洋，这波羊毛薅的还行哈~<br>刻度我是放置的焊盘，这样做PCB的时候刻度可以喷锡保护，还耐磨。<br>下面直接放置器件就好了，原理图都不用画，这可简单多了。<br>免费为厂家打个广告：<br>厂家的链接：<a href="https://www.sz-jlc.com/" target="_blank" rel="noopener">嘉立创</a></p><h1 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h1><p><img src="/images/PCB_Ruler/Snipaste_2019-05-09_12-30-39.png" alt=""></p><p><img src="/images/PCB_Ruler/Snipaste_2019-05-09_12-30-58.png" alt=""></p><p><img src="/images/PCB_Ruler/Snipaste_2019-05-09_12-31-12.png" alt=""></p><p><img src="/images/PCB_Ruler/Snipaste_2019-05-09_12-31-27.png" alt=""></p><p><img src="/images/PCB_Ruler/Snipaste_2019-05-09_12-31-42.png" alt=""></p><p><img src="/images/PCB_Ruler/Snipaste_2019-05-09_12-31-56.png" alt=""></p><h1 id="实物图"><a href="#实物图" class="headerlink" title="实物图"></a>实物图</h1><p><img src="/images/PCB_Ruler/IMG_20190509_124609.jpg" alt=""></p><p><img src="/images/PCB_Ruler/IMG_20190507_134210.jpg" alt=""></p><p>实物到手后手感还是不错了，黑色阻焊表面是磨砂的，手感非常好。<br>以后有钱了，就打个沉金的，然后收藏，哈哈~</p><h1 id="PS"><a href="#PS" class="headerlink" title="PS:"></a>PS:</h1><p>当然大部分尺子都送给我们班妹子了，果然还是把东西分享给被人看到别人快乐时的快乐要比自己得到东西时的快乐更要快乐˚‧<em>♡ॢ˃̶̤̀◡˂̶̤́♡ॢ</em>‧˚</p><h1 id="PCB文件"><a href="#PCB文件" class="headerlink" title="PCB文件"></a>PCB文件</h1><p>现将PCB文件分享出来，水平不高见谅。<br>链接：<a href="/files/PCB_Ruler/PCB_Ruler.zip">本地文件</a></p>]]></content>
       
       <categories>
           
@@ -236,10 +236,10 @@
     </entry>
     
     <entry>
-      <title></title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<h1 id="关于博主-amp-各种问题"><a href="#关于博主-amp-各种问题" class="headerlink" title="关于博主&amp;各种问题 "></a><center>关于博主&amp;各种问题 </center></h1><h2 id="为什么叫这个名字呢？因为它霸气啊！"><a href="#为什么叫这个名字呢？因为它霸气啊！" class="headerlink" title="为什么叫这个名字呢？因为它霸气啊！"></a>为什么叫这个名字呢？因为它霸气啊！</h2><p>还在睡梦中的博主：一个什么都折腾但是又什么都折腾不好的宅，偶尔看看书，耍耍吃鸡。最喜欢的事莫过于睡觉了。  </p><h2 id="为什么不能评论文章呢？"><a href="#为什么不能评论文章呢？" class="headerlink" title="为什么不能评论文章呢？"></a>为什么不能评论文章呢？</h2><p>用<code>GitHub</code>账号登录就可以了哦  </p><h2 id="访问速度好慢哦···"><a href="#访问速度好慢哦···" class="headerlink" title="访问速度好慢哦···"></a>访问速度好慢哦···</h2><p>国内用<code>Coding Pages</code>访问速度比较快，国外用<code>Github Pages</code>访问速度比较快，可以在 <em>社交链接</em> 里面进行切换哦~_~  </p>]]></content>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      <content type="html"><![CDATA[]]></content>
     </entry>
     
     <entry>
@@ -250,10 +250,10 @@
     </entry>
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      <content type="html"><![CDATA[]]></content>
+      <title></title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<h1 id="关于博主-amp-各种问题"><a href="#关于博主-amp-各种问题" class="headerlink" title="关于博主&amp;各种问题 "></a><center>关于博主&amp;各种问题 </center></h1><h2 id="为什么叫这个名字呢？因为它霸气啊！"><a href="#为什么叫这个名字呢？因为它霸气啊！" class="headerlink" title="为什么叫这个名字呢？因为它霸气啊！"></a>为什么叫这个名字呢？因为它霸气啊！</h2><p>还在睡梦中的博主：一个什么都折腾但是又什么都折腾不好的宅，偶尔看看书，耍耍吃鸡。最喜欢的事莫过于睡觉了。  </p><h2 id="为什么不能评论文章呢？"><a href="#为什么不能评论文章呢？" class="headerlink" title="为什么不能评论文章呢？"></a>为什么不能评论文章呢？</h2><p>用<code>GitHub</code>账号登录就可以了哦  </p><h2 id="访问速度好慢哦···"><a href="#访问速度好慢哦···" class="headerlink" title="访问速度好慢哦···"></a>访问速度好慢哦···</h2><p>国内用<code>Coding Pages</code>访问速度比较快，国外用<code>Github Pages</code>访问速度比较快，可以在 <em>社交链接</em> 里面进行切换哦~_~  </p>]]></content>
     </entry>
     
   
