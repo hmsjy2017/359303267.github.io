@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://359303267.github.io/"/>
-  <updated>2019-07-23T01:52:14.703Z</updated>
+  <updated>2019-08-08T19:23:11.203Z</updated>
   <id>https://359303267.github.io/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>一个不知道叫什么好的U盘启动工具集</title>
     <link href="https://359303267.github.io/PE/"/>
     <id>https://359303267.github.io/PE/</id>
-    <published>2019-07-23T09:42:34.000Z</published>
-    <updated>2019-07-23T01:52:14.703Z</updated>
+    <published>2019-08-08T17:22:54.000Z</published>
+    <updated>2019-08-08T19:23:11.203Z</updated>
     
     <summary type="html">
     
@@ -49,10 +49,43 @@
   </entry>
   
   <entry>
+    <title>使用单片机发送POCSAG编码呼响BP机</title>
+    <link href="https://359303267.github.io/POCSAG/"/>
+    <id>https://359303267.github.io/POCSAG/</id>
+    <published>2019-08-08T14:11:17.000Z</published>
+    <updated>2019-08-08T20:40:15.803Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;​    单片机使用STC公司的IAP15W4K58S4，时钟频率为27MHz，使用串口1来发送数据，串口波特率为115200。程序只是半成品，只支持1200比特率的数字机。  &lt;/p&gt;
+&lt;p&gt;​   
+        
+      
+    
+    </summary>
+    
+      <category term="经验分享" scheme="https://359303267.github.io/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="瞎折腾" scheme="https://359303267.github.io/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
+    
+      <category term="BP机" scheme="https://359303267.github.io/tags/BP%E6%9C%BA/"/>
+    
+      <category term="POCSAG" scheme="https://359303267.github.io/tags/POCSAG/"/>
+    
+      <category term="单片机" scheme="https://359303267.github.io/tags/%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>用PCB板做一把尺子</title>
     <link href="https://359303267.github.io/PCB_Ruler/"/>
     <id>https://359303267.github.io/PCB_Ruler/</id>
-    <published>2019-05-09T04:12:12.000Z</published>
+    <published>2019-05-09T12:12:12.000Z</published>
     <updated>2019-05-09T04:59:01.321Z</updated>
     
     <summary type="html">
@@ -82,7 +115,7 @@
     <title>Floppy内核关闭温控教程</title>
     <link href="https://359303267.github.io/FloppyKernel-02/"/>
     <id>https://359303267.github.io/FloppyKernel-02/</id>
-    <published>2019-02-08T09:41:13.000Z</published>
+    <published>2019-02-08T18:41:13.000Z</published>
     <updated>2019-02-08T11:00:03.316Z</updated>
     
     <summary type="html">
@@ -115,7 +148,7 @@
     <title>Floppy 内核关闭背光调节器的方法</title>
     <link href="https://359303267.github.io/FloppyKernel-01/"/>
     <id>https://359303267.github.io/FloppyKernel-01/</id>
-    <published>2019-01-12T14:16:45.000Z</published>
+    <published>2019-01-12T23:16:45.000Z</published>
     <updated>2019-02-08T10:58:35.813Z</updated>
     
     <summary type="html">
@@ -147,7 +180,7 @@
     <title>《知识就是力量第六期笔记分享》</title>
     <link href="https://359303267.github.io/zhishijiushililiang/"/>
     <id>https://359303267.github.io/zhishijiushililiang/</id>
-    <published>2018-09-04T04:10:42.000Z</published>
+    <published>2018-09-04T12:10:42.000Z</published>
     <updated>2018-09-04T04:59:42.000Z</updated>
     
     <summary type="html">
@@ -183,7 +216,7 @@
     <title>用好fastboot命令，刷机加锁不用再找工具！</title>
     <link href="https://359303267.github.io/fastboot-01/"/>
     <id>https://359303267.github.io/fastboot-01/</id>
-    <published>2018-09-02T14:14:15.000Z</published>
+    <published>2018-09-02T22:14:15.000Z</published>
     <updated>2018-09-02T14:28:53.000Z</updated>
     
     <summary type="html">
@@ -216,8 +249,8 @@
     <title>谈谈Kindle这个玩意儿</title>
     <link href="https://359303267.github.io/kindle-01/"/>
     <id>https://359303267.github.io/kindle-01/</id>
-    <published>2018-09-01T10:58:37.000Z</published>
-    <updated>2018-09-02T14:58:45.000Z</updated>
+    <published>2018-09-01T18:58:37.000Z</published>
+    <updated>2019-08-08T17:19:51.172Z</updated>
     
     <summary type="html">
     
@@ -248,7 +281,7 @@
     <title>我修改PE的一点小经验</title>
     <link href="https://359303267.github.io/PE-01/"/>
     <id>https://359303267.github.io/PE-01/</id>
-    <published>2018-08-31T09:44:57.000Z</published>
+    <published>2018-08-31T17:44:57.000Z</published>
     <updated>2018-11-17T14:32:04.000Z</updated>
     
     <summary type="html">
