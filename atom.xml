@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://359303267.github.io/"/>
-  <updated>2019-08-23T07:49:11.436Z</updated>
+  <updated>2019-08-23T08:44:11.600Z</updated>
   <id>https://359303267.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://359303267.github.io/POCSAG/"/>
     <id>https://359303267.github.io/POCSAG/</id>
     <published>2019-08-23T14:11:17.000Z</published>
-    <updated>2019-08-23T07:49:11.436Z</updated>
+    <updated>2019-08-23T08:44:11.600Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,7 @@
       
         
         
-          &lt;p&gt;​    &lt;strong&gt;需要注意的是，现在BP机工作频段已经被国家收回，所以自己使用手台、车台等大功率无线发射器在这个频段发射无线电波是违法的，所以需要进行发射信号的衰减，无线发射功率控制在0.1W之内是没有问题的。&lt;/strong&gt;&lt;/p&gt;
+          &lt;p&gt;&lt;strong&gt;禁止转载&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;​   
         
       
@@ -54,7 +54,7 @@
     <link href="https://359303267.github.io/Get-BP-Code/"/>
     <id>https://359303267.github.io/Get-BP-Code/</id>
     <published>2019-08-23T12:01:27.000Z</published>
-    <updated>2019-08-23T07:49:29.783Z</updated>
+    <updated>2019-08-23T08:44:32.340Z</updated>
     
     <summary type="html">
     
@@ -62,7 +62,8 @@
       
         
         
-          &lt;h1 id=&quot;前言少叙&quot;&gt;&lt;a href=&quot;#前言少叙&quot; class=&quot;headerlink&quot;
+          &lt;p&gt;&lt;strong&gt;禁止转载&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;前言少叙&quot;&gt;&lt;a href=&quot;#前言少叙&quot; class=&quot;headerlink&quot;
         
       
     
@@ -88,7 +89,7 @@
     <link href="https://359303267.github.io/PE/"/>
     <id>https://359303267.github.io/PE/</id>
     <published>2019-08-08T17:22:54.000Z</published>
-    <updated>2019-08-23T07:45:02.702Z</updated>
+    <updated>2019-08-23T08:45:07.170Z</updated>
     
     <summary type="html">
     
@@ -269,9 +270,9 @@
       <category term="杂七杂八的教程" scheme="https://359303267.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="瞎折腾" scheme="https://359303267.github.io/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
-    
       <category term="刷机" scheme="https://359303267.github.io/tags/%E5%88%B7%E6%9C%BA/"/>
+    
+      <category term="瞎折腾" scheme="https://359303267.github.io/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
       <category term="经验" scheme="https://359303267.github.io/tags/%E7%BB%8F%E9%AA%8C/"/>
     
