@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://359303267.github.io/"/>
-  <updated>2019-08-09T13:59:00.058Z</updated>
+  <updated>2019-08-23T07:49:11.436Z</updated>
   <id>https://359303267.github.io/</id>
   
   <author>
@@ -17,11 +17,78 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>开源！使用单片机发送POCSAG编码呼响BP机</title>
+    <link href="https://359303267.github.io/POCSAG/"/>
+    <id>https://359303267.github.io/POCSAG/</id>
+    <published>2019-08-23T14:11:17.000Z</published>
+    <updated>2019-08-23T07:49:11.436Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;​    &lt;strong&gt;需要注意的是，现在BP机工作频段已经被国家收回，所以自己使用手台、车台等大功率无线发射器在这个频段发射无线电波是违法的，所以需要进行发射信号的衰减，无线发射功率控制在0.1W之内是没有问题的。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​   
+        
+      
+    
+    </summary>
+    
+      <category term="BP机" scheme="https://359303267.github.io/categories/BP%E6%9C%BA/"/>
+    
+    
+      <category term="瞎折腾" scheme="https://359303267.github.io/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
+    
+      <category term="BP机" scheme="https://359303267.github.io/tags/BP%E6%9C%BA/"/>
+    
+      <category term="POCSAG" scheme="https://359303267.github.io/tags/POCSAG/"/>
+    
+      <category term="单片机" scheme="https://359303267.github.io/tags/%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何获得BP机的地址码和工作频率？</title>
+    <link href="https://359303267.github.io/Get-BP-Code/"/>
+    <id>https://359303267.github.io/Get-BP-Code/</id>
+    <published>2019-08-23T12:01:27.000Z</published>
+    <updated>2019-08-23T07:49:29.783Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;前言少叙&quot;&gt;&lt;a href=&quot;#前言少叙&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="BP机" scheme="https://359303267.github.io/categories/BP%E6%9C%BA/"/>
+    
+    
+      <category term="瞎折腾" scheme="https://359303267.github.io/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
+    
+      <category term="BP机" scheme="https://359303267.github.io/tags/BP%E6%9C%BA/"/>
+    
+      <category term="POCSAG" scheme="https://359303267.github.io/tags/POCSAG/"/>
+    
+      <category term="单片机" scheme="https://359303267.github.io/tags/%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+    
+      <category term="摩托罗拉" scheme="https://359303267.github.io/tags/%E6%91%A9%E6%89%98%E7%BD%97%E6%8B%89/"/>
+    
+  </entry>
+  
+  <entry>
     <title>一个不知道叫什么好的U盘启动工具集</title>
     <link href="https://359303267.github.io/PE/"/>
     <id>https://359303267.github.io/PE/</id>
     <published>2019-08-08T17:22:54.000Z</published>
-    <updated>2019-08-09T13:59:00.058Z</updated>
+    <updated>2019-08-23T07:45:02.702Z</updated>
     
     <summary type="html">
     
@@ -49,44 +116,11 @@
   </entry>
   
   <entry>
-    <title>使用单片机发送POCSAG编码呼响BP机</title>
-    <link href="https://359303267.github.io/POCSAG/"/>
-    <id>https://359303267.github.io/POCSAG/</id>
-    <published>2019-08-08T14:11:17.000Z</published>
-    <updated>2019-08-08T20:40:15.803Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;​    单片机使用STC公司的IAP15W4K58S4，时钟频率为27MHz，使用串口1来发送数据，串口波特率为115200。程序只是半成品，只支持1200比特率的数字机。  &lt;/p&gt;
-&lt;p&gt;​   
-        
-      
-    
-    </summary>
-    
-      <category term="经验分享" scheme="https://359303267.github.io/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
-    
-    
-      <category term="瞎折腾" scheme="https://359303267.github.io/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
-    
-      <category term="BP机" scheme="https://359303267.github.io/tags/BP%E6%9C%BA/"/>
-    
-      <category term="POCSAG" scheme="https://359303267.github.io/tags/POCSAG/"/>
-    
-      <category term="单片机" scheme="https://359303267.github.io/tags/%E5%8D%95%E7%89%87%E6%9C%BA/"/>
-    
-  </entry>
-  
-  <entry>
     <title>用PCB板做一把尺子</title>
     <link href="https://359303267.github.io/PCB_Ruler/"/>
     <id>https://359303267.github.io/PCB_Ruler/</id>
     <published>2019-05-09T12:12:12.000Z</published>
-    <updated>2019-05-09T04:59:01.321Z</updated>
+    <updated>2019-08-23T07:49:50.504Z</updated>
     
     <summary type="html">
     
@@ -100,14 +134,14 @@
     
     </summary>
     
-      <category term="经验分享" scheme="https://359303267.github.io/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+      <category term="PCB" scheme="https://359303267.github.io/categories/PCB/"/>
     
+    
+      <category term="瞎折腾" scheme="https://359303267.github.io/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
       <category term="PCB" scheme="https://359303267.github.io/tags/PCB/"/>
     
       <category term="经验" scheme="https://359303267.github.io/tags/%E7%BB%8F%E9%AA%8C/"/>
-    
-      <category term="瞎折腾" scheme="https://359303267.github.io/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
   </entry>
   
@@ -217,7 +251,7 @@
     <link href="https://359303267.github.io/fastboot-01/"/>
     <id>https://359303267.github.io/fastboot-01/</id>
     <published>2018-09-02T22:14:15.000Z</published>
-    <updated>2018-09-02T14:28:53.000Z</updated>
+    <updated>2019-08-23T07:51:24.784Z</updated>
     
     <summary type="html">
     
@@ -232,14 +266,14 @@
     
     </summary>
     
-      <category term="经验分享" scheme="https://359303267.github.io/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+      <category term="杂七杂八的教程" scheme="https://359303267.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E6%95%99%E7%A8%8B/"/>
     
+    
+      <category term="瞎折腾" scheme="https://359303267.github.io/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
       <category term="刷机" scheme="https://359303267.github.io/tags/%E5%88%B7%E6%9C%BA/"/>
     
       <category term="经验" scheme="https://359303267.github.io/tags/%E7%BB%8F%E9%AA%8C/"/>
-    
-      <category term="瞎折腾" scheme="https://359303267.github.io/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
       <category term="fastboot" scheme="https://359303267.github.io/tags/fastboot/"/>
     
@@ -267,9 +301,9 @@
       <category term="我的Kindle" scheme="https://359303267.github.io/categories/%E6%88%91%E7%9A%84Kindle/"/>
     
     
-      <category term="经验" scheme="https://359303267.github.io/tags/%E7%BB%8F%E9%AA%8C/"/>
-    
       <category term="瞎折腾" scheme="https://359303267.github.io/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
+    
+      <category term="经验" scheme="https://359303267.github.io/tags/%E7%BB%8F%E9%AA%8C/"/>
     
       <category term="Kindle" scheme="https://359303267.github.io/tags/Kindle/"/>
     
