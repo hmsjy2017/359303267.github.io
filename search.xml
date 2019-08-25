@@ -6,7 +6,7 @@
       <title>几种BP机的解密方法</title>
       <link href="/BP-Password/"/>
       <url>/BP-Password/</url>
-      <content type="html"><![CDATA[<p>摩托罗拉大顾问型号解密：</p><p>一、首先你需要一个BP机写码设备（USB转TTL串口小板也可以，要保证写入数据时接触良好）。<br>二、你需要一个配套的解密软件，可以从<a href="https://market.m.taobao.com/app/idleFish-F2e/widle-taobao-rax/page-detail?wh_weex=true&amp;wx_navbar_transparent=true&amp;id=598356115148&amp;ut_sk=1.XQe6E2%252FASVwDAPP0NEMf5WRD_21407387_1566724004188.Copy.detail.598356115148.1944924120&amp;forceFlush=1" target="_blank" rel="noopener">闲鱼平台</a>向我购买。这个软件是我自己编写的，为了防止他人盗用，加入了一个简单的激活码认证。购买时留言从博客上看到的只需要十块钱就可以得到这个软件，比什么60块钱的解密小板靠谱多了，经过了很多大顾问的测试。</p><p>其原理是向CPU写入一段特殊的数据，使其将EEPROM中的加密使能位清除。这需要一个，也可以使用写码板。    </p><p><img src="/images/BP-Password/顾问型寻呼机解密帮助.jpg" alt="顾问型寻呼机解密帮助">    </p><p>其他资料来源中国知网学问： </p><p><img src="/images/BP-Password/几种摩托罗拉寻呼机的除密解锁01.jpg" alt="几种摩托罗拉寻呼机的除密解锁01">  </p><p><img src="/images/BP-Password/几种摩托罗拉寻呼机的除密解锁02.jpg" alt="几种摩托罗拉寻呼机的除密解锁02">  </p>]]></content>
+      <content type="html"><![CDATA[<p>摩托罗拉大顾问型号解密：</p><p>一、首先你需要一个BP机写码设备（USB转TTL串口小板也可以，要保证写入数据时接触良好）。<br>二、你需要一个配套的解密软件，可以从<a href="https://market.m.taobao.com/app/idleFish-F2e/widle-taobao-rax/page-detail?wh_weex=true&amp;wx_navbar_transparent=true&amp;id=598356115148&amp;ut_sk=1.XQe6E2%252FASVwDAPP0NEMf5WRD_21407387_1566724004188.Copy.detail.598356115148.1944924120&amp;forceFlush=1" target="_blank" rel="noopener">闲鱼平台</a>向我购买。这个软件是我自己编写的，为了防止他人盗用，加入了一个简单的激活码认证。购买时留言从博客上看到的只需要十块钱就可以得到这个软件，比什么60块钱的解密小板靠谱多了，经过了很多大顾问的测试。</p><p>其原理是向CPU写入一段特殊的数据，使其将EEPROM中的加密使能位清除。</p><p><img src="/images/BP-Password/顾问型寻呼机解密帮助.jpg" alt="顾问型寻呼机解密帮助">    </p><p>其他资料来源中国知网学问： </p><p><img src="/images/BP-Password/几种摩托罗拉寻呼机的除密解锁01.jpg" alt="几种摩托罗拉寻呼机的除密解锁01">  </p><p><img src="/images/BP-Password/几种摩托罗拉寻呼机的除密解锁02.jpg" alt="几种摩托罗拉寻呼机的除密解锁02">  </p>]]></content>
       
       <categories>
           
@@ -21,11 +21,11 @@
             
             <tag> BP机 </tag>
             
+            <tag> 大顾问 </tag>
+            
             <tag> 单片机 </tag>
             
             <tag> 摩托罗拉 </tag>
-            
-            <tag> 大顾问 </tag>
             
             <tag> 寻呼机解密 </tag>
             
@@ -52,9 +52,9 @@
             
             <tag> BP机 </tag>
             
-            <tag> POCSAG </tag>
-            
             <tag> 单片机 </tag>
+            
+            <tag> POCSAG </tag>
             
         </tags>
       
@@ -79,11 +79,11 @@
             
             <tag> BP机 </tag>
             
-            <tag> POCSAG </tag>
-            
             <tag> 单片机 </tag>
             
             <tag> 摩托罗拉 </tag>
+            
+            <tag> POCSAG </tag>
             
         </tags>
       
@@ -241,9 +241,9 @@
             
             <tag> 瞎折腾 </tag>
             
-            <tag> 经验 </tag>
-            
             <tag> 刷机 </tag>
+            
+            <tag> 经验 </tag>
             
             <tag> fastboot </tag>
             
