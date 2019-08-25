@@ -146,7 +146,7 @@
       <div class="post-meta">
         
         <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-08-23T12:01:27+00:00">2019-08-23 12:01:27</time></span>
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-08-23T12:01:27+08:00">2019-08-23 12:01:27</time></span>
         </span>
         
         
@@ -196,17 +196,18 @@
 <p>缺点：1、速度慢，如果知道工作频率的话可能需要追十几个小时，不晓得工作频率时间会更长。</p>
 <h2 id="二、使用读码设备读取地址码"><a href="#二、使用读码设备读取地址码" class="headerlink" title="二、使用读码设备读取地址码"></a>二、使用读码设备读取地址码</h2><p>工作频率的问题解决了，地址码怎么获得呢？</p>
 <p>地址码是存放在BP机CPU中一块EEPROM存储器当中的，如果你的BP机没有被加密，可以通过读码设备读出。当然有些型号被加密也是有办法进行解密的。</p>
-<p>如果你的动手能力强，有一定的电路基础，可以自己做一个读码设备（其实就是个串口，CH340、FT232芯片甚至MAX232都可以）。其实很简单，十几块钱就搞得定。</p>
+<p>如果你的动手能力强，有一定的电路基础，可以自己做一个读码设备（其实就是个串口，CH340、FT232芯片甚至MAX232都可以）。其实很简单，十几块钱就搞得定。  </p>
+<p>原理图（已经通过测试的）：  </p>
 <p><img src="/images/Get-BP-Code/05.png" alt="IMG_20190722_191136"></p>
+<p>实物图：  </p>
 <p><img src="/images/Get-BP-Code/03.png" alt="IMG_20190722_191136"></p>
-<p>动手能力没那么强的话，可以去各大网络购物平台搜索，也是可以买得到的。</p>
 <p>只有读码设备是不行的，还得有配套的读码软件才可以。读码软件使用<code>雷霆2000</code>系列光盘，大多数的寻呼机写码软件都集成在里面了，只是这些软件只能跑在DOS或者WinXP系统下，为了能使现在主流的Windows7、10能够运行，我将它集了DOSBOX和VMware，可以直接在现有系统下打开。</p>
 <p><img src="/images/Get-BP-Code/04.png" alt="04"></p>
 <p>可以看到，每个呼机可以设置四个不同的地址码，可以自定义每个地址码下的功能位，除了读码写码的功能，还有更改BP机的很多参数。不小心改错了也不用怕，恢复缺省参数即可。</p>
-<p>如何得到写码软件呢？</p>
-<p>可以去全网搜索下载，应该会有，也可以打赏我一下，然后给我留言，我通过邮箱发送给你。</p>
+<p>找不到写码软件怎么办？<br>去各大搜索引擎搜索BP机写码软件，应该找得到。摩托罗拉官网现在还保留了几个型号的BP机写码软件，现在是可以下载的。（DOS环境下运行）  </p>
+<p>动手能力不强自己做不出板子怎么办？<br>我自己做板子的时候多做了几个，可以通过<a href="https://market.m.taobao.com/app/idleFish-F2e/widle-taobao-rax/page-detail?wh_weex=true&amp;wx_navbar_transparent=true&amp;id=598353867729&amp;ut_sk=1.XQe6E2%252FASVwDAPP0NEMf5WRD_21407387_1566722074532.Copy.detail.598353867729.1944924120&amp;forceFlush=1" target="_blank" rel="noopener">闲鱼平台</a>向我购买，附带视频教程和摩托罗拉写码软件集合。我只焊了几个板子，数量有限。</p>
 <p>这个方法的优点：1、速度快  2、可以自定义地址码和更改其他参数</p>
-<p>缺点：1、需要自制或者购买读码设备  2、如果BP机加密并且没有密码，就无法读出地址码。</p>
+<p>缺点：1、需要自制或者购买读码设备  2、如果BP机加密并且没有密码，就无法读出地址码。  3、可能要多花点零钱</p>
 
     </main>
     <footer class="post-footer">
@@ -339,7 +340,7 @@
     
     <div class="archives-count">
       <div class="site-count-title">归档</div>
-      <div><a href="/archives/">10</a></div>
+      <div><a href="/archives/">11</a></div>
     </div>
     
     
@@ -357,7 +358,7 @@
     
     <div class="tags-count">
       <div class="site-count-title">标签</div>
-      <div><a href="/tags/">22</a></div>
+      <div><a href="/tags/">24</a></div>
     </div>
     
   </div>

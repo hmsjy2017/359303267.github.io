@@ -129,6 +129,73 @@
   
   <article class="index-article card" itemscope itemtype="http://schema.org/Article">
     <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="https://359303267.github.io/BP-Password/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <meta itemprop="name" content="小小小日天">
+        <meta itemprop="description" content="当家门在开启时，我会向故乡顶礼——许巍">
+        <meta itemprop="image" content="/images/avatar.png">
+      </span>
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+        <meta itemprop="name" content="小小小日天的博客">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+        <a class="post-title-link post-title-link-external" href="/BP-Password/" itemprop="url">几种BP机的解密方法</a>
+      </h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-08-25T17:13:45+08:00">2019-08-25 17:13:45</time></span>
+        </span>
+        
+        
+        
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-categories">
+          
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/BP机/" itemprop="url" rel="index"><span itemprop="name">BP机</span></a></span>
+        </span>
+        
+        
+        
+        
+      </div>
+    </header>
+    <main class="post-main" itemprop="articleBody">
+      
+      <p>摩托罗拉大顾问型号解密：</p>
+<p>一、首先你需要一个BP机写码设备（USB转TTL串口小板也可以，要保证写入数据时接触良好）。<br>二、你需要一个配套的解密软件，可以从<a href="https://market.m.taobao.com/app/idleFish-F2e/widle-taobao-rax/page-detail?wh_weex=true&amp;wx_navbar_transparent=true&amp;id=598356115148&amp;ut_sk=1.XQe6E2%252FASVwDAPP0NEMf5WRD_21407387_1566724004188.Copy.detail.598356115148.1944924120&amp;forceFlush=1" target="_blank" rel="noopener">闲鱼平台</a>向我购买。这个软件是我自己编写的，为了防止他人盗用，加入了一个简单的激活码认证。购买时留言从博客上看到的只需要十块钱就可以得到这个软件，比什么60块钱的解密小板靠谱多了，经过了很多大顾问的测试。</p>
+<p>
+      
+    </main>
+    <footer class="post-footer">
+      
+      <div class="post-tags">
+        
+        
+        
+        
+        <a class="post-tag button" href="/tags/瞎折腾/" style="background: #fc6423;" rel="tag"><i class="fas fa-tags"></i>瞎折腾</a>
+        
+        <a class="post-tag button" href="/tags/BP机/" style="background: #a3bb54;" rel="tag"><i class="fas fa-tags"></i>BP机</a>
+        
+        <a class="post-tag button" href="/tags/单片机/" style="background: #47aaff;" rel="tag"><i class="fas fa-tags"></i>单片机</a>
+        
+        <a class="post-tag button" href="/tags/摩托罗拉/" style="background: #fc6423;" rel="tag"><i class="fas fa-tags"></i>摩托罗拉</a>
+        
+        <a class="post-tag button" href="/tags/大顾问/" style="background: #a3bb54;" rel="tag"><i class="fas fa-tags"></i>大顾问</a>
+        
+        <a class="post-tag button" href="/tags/寻呼机解密/" style="background: #47aaff;" rel="tag"><i class="fas fa-tags"></i>寻呼机解密</a>
+        
+      </div>
+      
+    </footer>
+  </article>
+  
+  <article class="index-article card" itemscope itemtype="http://schema.org/Article">
+    <div class="post-block">
       <link itemprop="mainEntityOfPage" href="https://359303267.github.io/POCSAG/">
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
         <meta itemprop="name" content="小小小日天">
@@ -146,7 +213,7 @@
       <div class="post-meta">
         
         <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-08-23T14:11:17+00:00">2019-08-23 14:11:17</time></span>
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-08-23T14:11:17+08:00">2019-08-23 14:11:17</time></span>
         </span>
         
         
@@ -168,8 +235,8 @@
       <p><strong>禁止转载</strong></p>
 <p>​    <strong>需要注意的是，现在BP机工作频段已经被国家收回，所以自己使用手台、车台等大功率无线发射器在这个频段发射无线电波是违法的，所以需要进行发射信号的衰减，无线发射功率控制在0.1W之内是没有问题的。</strong></p>
 <p>​    单片机使用STC公司的IAP15W4K58S4，时钟频率为27MHz，使用串口1来发送数据，串口波特率为115200。支持1200和512比特速率的POCSAG编码，支持正负相位，可以发送数字信息和汉字信息（不支持混输）</p>
-<p>​    对讲机我用的是宝峰UV-5R。单片机的P36接对讲机的压控振荡器输入端，P35接对讲机的PTT控制端，还要和对讲机共地。 对讲机的频率需要调到BP的工作频率一样。 </p>
-<p>​    BP机我用摩托罗拉精英王和大顾问实验成功，如果不响可以试试切换一下相位。如果显示乱码就换一个响声/功能位。<br>​<br>​    如果就是不响，要知道哪有这么容易响？地址码、BP机工作频率、对讲机频率调到和BP机工作频率一致、对讲机不
+<p>​    对讲机我用的是宝峰UV-5R。单片机的P36接对讲机的压控振荡器输入端，P35接对讲机的PTT控制端，还要和对讲机共地（至于这三个接线端具体接在哪一个位置，网上一搜就有了）。对讲机的发射频率需要调到BP机的工作频率一样。 </p>
+<p>​    BP机我用摩托罗拉精英王和大顾问实验成功，如果不响可以试试切换一下相位。如果显示乱码就换一个响声/功能位。<br>​<br>​    如果就是不响，要知道哪有这么容易响？地址码、B
       
     </main>
     <footer class="post-footer">
@@ -211,7 +278,7 @@
       <div class="post-meta">
         
         <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-08-23T12:01:27+00:00">2019-08-23 12:01:27</time></span>
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-08-23T12:01:27+08:00">2019-08-23 12:01:27</time></span>
         </span>
         
         
@@ -279,7 +346,7 @@
       <div class="post-meta">
         
         <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-08-08T17:22:54+00:00">2019-08-08 17:22:54</time></span>
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-08-08T17:22:54+08:00">2019-08-08 17:22:54</time></span>
         </span>
         
         
@@ -340,7 +407,7 @@
       <div class="post-meta">
         
         <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-05-09T12:12:12+00:00">2019-05-09 12:12:12</time></span>
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-05-09T12:12:12+08:00">2019-05-09 12:12:12</time></span>
         </span>
         
         
@@ -400,7 +467,7 @@
       <div class="post-meta">
         
         <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-02-08T17:41:13-01:00">2019-02-08 17:41:13</time></span>
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-02-08T17:41:13+08:00">2019-02-08 17:41:13</time></span>
         </span>
         
         
@@ -471,7 +538,7 @@
       <div class="post-meta">
         
         <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-01-12T22:16:45-01:00">2019-01-12 22:16:45</time></span>
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2019-01-12T22:16:45+08:00">2019-01-12 22:16:45</time></span>
         </span>
         
         
@@ -533,7 +600,7 @@
       <div class="post-meta">
         
         <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-09-04T12:10:42+00:00">2018-09-04 12:10:42</time></span>
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-09-04T12:10:42+08:00">2018-09-04 12:10:42</time></span>
         </span>
         
         
@@ -603,7 +670,7 @@
       <div class="post-meta">
         
         <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-09-02T22:14:15+00:00">2018-09-02 22:14:15</time></span>
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-09-02T22:14:15+08:00">2018-09-02 22:14:15</time></span>
         </span>
         
         
@@ -637,11 +704,11 @@
         
         
         
-        <a class="post-tag button" href="/tags/刷机/" style="background: #fc6423;" rel="tag"><i class="fas fa-tags"></i>刷机</a>
+        <a class="post-tag button" href="/tags/瞎折腾/" style="background: #fc6423;" rel="tag"><i class="fas fa-tags"></i>瞎折腾</a>
         
-        <a class="post-tag button" href="/tags/瞎折腾/" style="background: #a3bb54;" rel="tag"><i class="fas fa-tags"></i>瞎折腾</a>
+        <a class="post-tag button" href="/tags/经验/" style="background: #a3bb54;" rel="tag"><i class="fas fa-tags"></i>经验</a>
         
-        <a class="post-tag button" href="/tags/经验/" style="background: #47aaff;" rel="tag"><i class="fas fa-tags"></i>经验</a>
+        <a class="post-tag button" href="/tags/刷机/" style="background: #47aaff;" rel="tag"><i class="fas fa-tags"></i>刷机</a>
         
         <a class="post-tag button" href="/tags/fastboot/" style="background: #fc6423;" rel="tag"><i class="fas fa-tags"></i>fastboot</a>
         
@@ -669,7 +736,7 @@
       <div class="post-meta">
         
         <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-09-01T18:58:37+00:00">2018-09-01 18:58:37</time></span>
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-09-01T18:58:37+08:00">2018-09-01 18:58:37</time></span>
         </span>
         
         
@@ -715,71 +782,10 @@
     </footer>
   </article>
   
-  <article class="index-article card" itemscope itemtype="http://schema.org/Article">
-    <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="https://359303267.github.io/PE-01/">
-      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <meta itemprop="name" content="小小小日天">
-        <meta itemprop="description" content="当家门在开启时，我会向故乡顶礼——许巍">
-        <meta itemprop="image" content="/images/avatar.png">
-      </span>
-      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="小小小日天的博客">
-      </span>
-    </div>
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/PE-01/" itemprop="url">我修改PE的一点小经验</a>
-      </h1>
-      <div class="post-meta">
-        
-        <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-08-31T17:44:57+00:00">2018-08-31 17:44:57</time></span>
-        </span>
-        
-        
-        
-        <span class="post-meta-divider divider">|</span>
-        
-        <span class="post-categories">
-          
-          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/WinPE/" itemprop="url" rel="index"><span itemprop="name">WinPE</span></a></span>
-        </span>
-        
-        
-        
-        
-      </div>
-    </header>
-    <main class="post-main" itemprop="articleBody">
-      
-      <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><ul>
-<li>我觉得应该把这些经验分享出来，因为我觉得我的技术算是非常的差，基本上用的都是别人制作好的东西，我只是把他们简单的拼合在一起，事实上确是如此。下面我所说的PE是指的整个工具的集合，而非特指Win2003或者Win10PE，我又比较懒，多打几个字就不是滋味，所以PE就是那个不知道叫什么好的工具集  </li>
-</ul>
-<h1 id="PE中的注册表部分"><a href="#PE中的注册表部分" class="headerlink" title="PE中的注册表部分"></a>PE中的注册表部分</h1><ul>
-<li>PE内核中的注册表是PE的核心部分，每个大神制作的PE内核都有他们独到的部分，可谓是百家齐放。这部分很难，网上搜集到的资料也比较少。我曾经也是有自己精简注册表的想法的，但是发现这样太耗费时间，不如直接用别人修改好的，站在巨人的肩膀上可以少费力很多。我用的就是无忧论坛<strong>wimboot</strong>大神制
-      
-    </main>
-    <footer class="post-footer">
-      
-      <div class="post-tags">
-        
-        
-        
-        
-        <a class="post-tag button" href="/tags/经验/" style="background: #fc6423;" rel="tag"><i class="fas fa-tags"></i>经验</a>
-        
-        <a class="post-tag button" href="/tags/WinPE/" style="background: #a3bb54;" rel="tag"><i class="fas fa-tags"></i>WinPE</a>
-        
-        <a class="post-tag button" href="/tags/U盘启动/" style="background: #47aaff;" rel="tag"><i class="fas fa-tags"></i>U盘启动</a>
-        
-        <a class="post-tag button" href="/tags/工具集/" style="background: #fc6423;" rel="tag"><i class="fas fa-tags"></i>工具集</a>
-        
-      </div>
-      
-    </footer>
-  </article>
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fas fa-angle-right"></i></a>
+  </nav>
   
   
   
@@ -819,7 +825,7 @@
     
     <div class="archives-count">
       <div class="site-count-title">归档</div>
-      <div><a href="/archives/">10</a></div>
+      <div><a href="/archives/">11</a></div>
     </div>
     
     
@@ -837,7 +843,7 @@
     
     <div class="tags-count">
       <div class="site-count-title">标签</div>
-      <div><a href="/tags/">22</a></div>
+      <div><a href="/tags/">24</a></div>
     </div>
     
   </div>

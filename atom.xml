@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://359303267.github.io/"/>
-  <updated>2019-08-23T08:44:11.600Z</updated>
+  <updated>2019-08-25T09:19:38.205Z</updated>
   <id>https://359303267.github.io/</id>
   
   <author>
@@ -17,11 +17,48 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>几种BP机的解密方法</title>
+    <link href="https://359303267.github.io/BP-Password/"/>
+    <id>https://359303267.github.io/BP-Password/</id>
+    <published>2019-08-25T09:13:45.000Z</published>
+    <updated>2019-08-25T09:19:38.205Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;摩托罗拉大顾问型号解密：&lt;/p&gt;
+&lt;p&gt;一、首先你需要一个BP机写码设备（USB转TTL串口小板也可以，要保证写入数据时接触良好）。&lt;br&gt;二、你需要一个配套的解密软件，可以从&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="BP机" scheme="https://359303267.github.io/categories/BP%E6%9C%BA/"/>
+    
+    
+      <category term="瞎折腾" scheme="https://359303267.github.io/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
+    
+      <category term="BP机" scheme="https://359303267.github.io/tags/BP%E6%9C%BA/"/>
+    
+      <category term="单片机" scheme="https://359303267.github.io/tags/%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+    
+      <category term="摩托罗拉" scheme="https://359303267.github.io/tags/%E6%91%A9%E6%89%98%E7%BD%97%E6%8B%89/"/>
+    
+      <category term="大顾问" scheme="https://359303267.github.io/tags/%E5%A4%A7%E9%A1%BE%E9%97%AE/"/>
+    
+      <category term="寻呼机解密" scheme="https://359303267.github.io/tags/%E5%AF%BB%E5%91%BC%E6%9C%BA%E8%A7%A3%E5%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
     <title>开源！使用单片机发送POCSAG编码呼响BP机</title>
     <link href="https://359303267.github.io/POCSAG/"/>
     <id>https://359303267.github.io/POCSAG/</id>
-    <published>2019-08-23T14:11:17.000Z</published>
-    <updated>2019-08-23T08:44:11.600Z</updated>
+    <published>2019-08-23T06:11:17.000Z</published>
+    <updated>2019-08-25T08:28:27.652Z</updated>
     
     <summary type="html">
     
@@ -53,8 +90,8 @@
     <title>如何获得BP机的地址码和工作频率？</title>
     <link href="https://359303267.github.io/Get-BP-Code/"/>
     <id>https://359303267.github.io/Get-BP-Code/</id>
-    <published>2019-08-23T12:01:27.000Z</published>
-    <updated>2019-08-23T08:44:32.340Z</updated>
+    <published>2019-08-23T04:01:27.000Z</published>
+    <updated>2019-08-25T08:43:51.747Z</updated>
     
     <summary type="html">
     
@@ -88,7 +125,7 @@
     <title>一个不知道叫什么好的U盘启动工具集</title>
     <link href="https://359303267.github.io/PE/"/>
     <id>https://359303267.github.io/PE/</id>
-    <published>2019-08-08T17:22:54.000Z</published>
+    <published>2019-08-08T09:22:54.000Z</published>
     <updated>2019-08-23T08:45:07.170Z</updated>
     
     <summary type="html">
@@ -120,7 +157,7 @@
     <title>用PCB板做一把尺子</title>
     <link href="https://359303267.github.io/PCB_Ruler/"/>
     <id>https://359303267.github.io/PCB_Ruler/</id>
-    <published>2019-05-09T12:12:12.000Z</published>
+    <published>2019-05-09T04:12:12.000Z</published>
     <updated>2019-08-23T07:49:50.504Z</updated>
     
     <summary type="html">
@@ -150,7 +187,7 @@
     <title>Floppy内核关闭温控教程</title>
     <link href="https://359303267.github.io/FloppyKernel-02/"/>
     <id>https://359303267.github.io/FloppyKernel-02/</id>
-    <published>2019-02-08T18:41:13.000Z</published>
+    <published>2019-02-08T09:41:13.000Z</published>
     <updated>2019-02-08T11:00:03.316Z</updated>
     
     <summary type="html">
@@ -183,7 +220,7 @@
     <title>Floppy 内核关闭背光调节器的方法</title>
     <link href="https://359303267.github.io/FloppyKernel-01/"/>
     <id>https://359303267.github.io/FloppyKernel-01/</id>
-    <published>2019-01-12T23:16:45.000Z</published>
+    <published>2019-01-12T14:16:45.000Z</published>
     <updated>2019-02-08T10:58:35.813Z</updated>
     
     <summary type="html">
@@ -215,7 +252,7 @@
     <title>《知识就是力量第六期笔记分享》</title>
     <link href="https://359303267.github.io/zhishijiushililiang/"/>
     <id>https://359303267.github.io/zhishijiushililiang/</id>
-    <published>2018-09-04T12:10:42.000Z</published>
+    <published>2018-09-04T04:10:42.000Z</published>
     <updated>2018-09-04T04:59:42.000Z</updated>
     
     <summary type="html">
@@ -251,7 +288,7 @@
     <title>用好fastboot命令，刷机加锁不用再找工具！</title>
     <link href="https://359303267.github.io/fastboot-01/"/>
     <id>https://359303267.github.io/fastboot-01/</id>
-    <published>2018-09-02T22:14:15.000Z</published>
+    <published>2018-09-02T14:14:15.000Z</published>
     <updated>2019-08-23T07:51:24.784Z</updated>
     
     <summary type="html">
@@ -270,11 +307,11 @@
       <category term="杂七杂八的教程" scheme="https://359303267.github.io/categories/%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB%E7%9A%84%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="刷机" scheme="https://359303267.github.io/tags/%E5%88%B7%E6%9C%BA/"/>
-    
       <category term="瞎折腾" scheme="https://359303267.github.io/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
       <category term="经验" scheme="https://359303267.github.io/tags/%E7%BB%8F%E9%AA%8C/"/>
+    
+      <category term="刷机" scheme="https://359303267.github.io/tags/%E5%88%B7%E6%9C%BA/"/>
     
       <category term="fastboot" scheme="https://359303267.github.io/tags/fastboot/"/>
     
@@ -284,7 +321,7 @@
     <title>谈谈Kindle这个玩意儿</title>
     <link href="https://359303267.github.io/kindle-01/"/>
     <id>https://359303267.github.io/kindle-01/</id>
-    <published>2018-09-01T18:58:37.000Z</published>
+    <published>2018-09-01T10:58:37.000Z</published>
     <updated>2019-08-08T17:19:51.172Z</updated>
     
     <summary type="html">
@@ -316,7 +353,7 @@
     <title>我修改PE的一点小经验</title>
     <link href="https://359303267.github.io/PE-01/"/>
     <id>https://359303267.github.io/PE-01/</id>
-    <published>2018-08-31T17:44:57.000Z</published>
+    <published>2018-08-31T09:44:57.000Z</published>
     <updated>2018-11-17T14:32:04.000Z</updated>
     
     <summary type="html">
