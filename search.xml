@@ -3,6 +3,33 @@
   
     
     <entry>
+      <title>记一次kindle Paperwhite3 拆机降级</title>
+      <link href="/kindle-02/"/>
+      <url>/kindle-02/</url>
+      <content type="html"><![CDATA[<h1 id="记一次kindle-Paperwhite3-拆机降级"><a href="#记一次kindle-Paperwhite3-拆机降级" class="headerlink" title="记一次kindle Paperwhite3 拆机降级"></a>记一次kindle Paperwhite3 拆机降级</h1><h1 id="降级步骤"><a href="#降级步骤" class="headerlink" title="降级步骤"></a>降级步骤</h1><p><strong>拆机降级理论上支持任何版本，也可以救砖。</strong>  </p><p>原理就是进入<code>fastboot</code>模式，使用fastboot刷写内核和文件系统。懂的就不用往下看了，不懂得继续please.  </p><ol><li><p>先拆机，使用<code>usb转串口模块</code>连接kpw3，我用的3.3v电平的模块，kindle是1.8v电平的，所以最好别使用5v TTL电平。  </p></li><li><p>打开<code>putty</code>软件，打开对应的串口号，波特率是115200。  </p></li><li><p>重启kindle，putty此时会输出一大堆debug信息，不要管，重启之后立即狂按enter键（一定是记得是重启之后立马狂按，否则就会错过进入uboot的机会）。  </p></li><li><p>几秒之后会出现<code>uboot</code>命令行，这时候输入命令进入bist：  </p></li></ol><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">bist<br></code></pre></td></tr></table></figure><ol start="5"><li>接着再输入命令进入fastboot模式：  </li></ol><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">fastboot<br></code></pre></td></tr></table></figure><ol start="6"><li><p>使用<code>zadig</code>安装驱动，驱动类型选择<code>libusb</code>  </p></li><li><p>使用kindletool.exe对固件进行解包，想刷哪个版本的就解对应的包，解包命令： </p></li></ol><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">kindletool extract [固件.bin] [输出文件夹]<br></code></pre></td></tr></table></figure><p><strong>解包输出的uImage文件就是内核，可以直接刷入，rootfs.img.gz是文件系统，需要使用7-zip或者winrar对rootfs.img.gz再次解压出rootfs.img才可以刷入。</strong>  </p><ol start="8"><li><p>在cmd里打开fastboot工具，这时候就和手机刷机是一样的了，可以只刷内核不刷系统，也可以只刷系统不换内核。  </p></li><li><p>先刷内核：  </p></li></ol><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">fastboot flash kernel [uImage文件路径]<br></code></pre></td></tr></table></figure><ol start="10"><li>再刷系统：  </li></ol><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">fastboot flash system [rootfs.img文件路径]<br></code></pre></td></tr></table></figure><ol start="11"><li>然后输入：  </li></ol><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">fastboot reboot<br></code></pre></td></tr></table></figure><p><strong>重启kindle，就可以发现系统已经降回来了，最好再重置一下系统，防止文件不匹配导致其他问题。下面该越狱越狱，该折腾折腾。</strong>  </p><ol start="12"><li>过程结束，Over~  </li><li>为什么没有图？？因为我懒得截，就酱~~  </li></ol><h2 id="工具下载："><a href="#工具下载：" class="headerlink" title="工具下载："></a>工具下载：</h2><p>kindle 版fastboot.exe:<a href="/files/kindle-02/fastboot_win_public_Kindle.rar">/files/kindle-02/fastboot_win_public_Kindle.rar</a><br>zadig驱动安装工具:<a href="/files/kindle-02/Zadig.zip">/files/kindle-02/Zadig.zip</a><br>kindletool固件解包工具：<a href="/files/kindle-02/kindletool-v1.6.5-mingw.zip">/files/kindle-02/kindletool-v1.6.5-mingw.zip</a><br>putty中文版：<a href="/files/kindle-02/Putty.zip">/files/kindle-02/Putty.zip</a>  </p><h2 id="资料参考："><a href="#资料参考：" class="headerlink" title="资料参考："></a>资料参考：</h2><p><a href="https://www.nmza.net/archives/kindle-downgrade-silu.html" target="_blank" rel="noopener">[1.]Kindle TTL 强刷降级 救砖 思路讲解</a><br><a href="http://learn.diynova.com/2015/11/fix-kindle-booting-problem/" target="_blank" rel="noopener">[2.]Kindle阅读器“卡大树“的修复过程</a><br><a href="http://blog.sina.cn/dpool/blog/s/blog_53d874320102vx6d.html" target="_blank" rel="noopener">[3.]Kindle Paperwhite3 拆机越狱安装Koreader的攻略</a></p>]]></content>
+      
+      <categories>
+          
+          <category> 我的Kindle </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 经验 </tag>
+            
+            <tag> 瞎折腾 </tag>
+            
+            <tag> Kindle </tag>
+            
+            <tag> 杂谈 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>几种BP机的解密方法</title>
       <link href="/BP-Password/"/>
       <url>/BP-Password/</url>
@@ -21,11 +48,11 @@
             
             <tag> BP机 </tag>
             
-            <tag> 大顾问 </tag>
-            
             <tag> 单片机 </tag>
             
             <tag> 摩托罗拉 </tag>
+            
+            <tag> 大顾问 </tag>
             
             <tag> 寻呼机解密 </tag>
             
@@ -52,9 +79,9 @@
             
             <tag> BP机 </tag>
             
-            <tag> 单片机 </tag>
-            
             <tag> POCSAG </tag>
+            
+            <tag> 单片机 </tag>
             
         </tags>
       
@@ -79,11 +106,11 @@
             
             <tag> BP机 </tag>
             
+            <tag> POCSAG </tag>
+            
             <tag> 单片机 </tag>
             
             <tag> 摩托罗拉 </tag>
-            
-            <tag> POCSAG </tag>
             
         </tags>
       
@@ -131,11 +158,11 @@
       
         <tags>
             
-            <tag> 瞎折腾 </tag>
-            
             <tag> PCB </tag>
             
             <tag> 经验 </tag>
+            
+            <tag> 瞎折腾 </tag>
             
         </tags>
       
@@ -239,11 +266,11 @@
       
         <tags>
             
-            <tag> 瞎折腾 </tag>
-            
             <tag> 刷机 </tag>
             
             <tag> 经验 </tag>
+            
+            <tag> 瞎折腾 </tag>
             
             <tag> fastboot </tag>
             
@@ -266,9 +293,9 @@
       
         <tags>
             
-            <tag> 瞎折腾 </tag>
-            
             <tag> 经验 </tag>
+            
+            <tag> 瞎折腾 </tag>
             
             <tag> Kindle </tag>
             
@@ -316,6 +343,13 @@
     </entry>
     
     <entry>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      <content type="html"><![CDATA[]]></content>
+    </entry>
+    
+    <entry>
       <title></title>
       <link href="/PEDonation/index.html"/>
       <url>/PEDonation/index.html</url>
@@ -327,13 +361,6 @@
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
       <content type="html"><![CDATA[<h1 id="关于博主-amp-各种问题"><a href="#关于博主-amp-各种问题" class="headerlink" title="关于博主&amp;各种问题 "></a><center>关于博主&amp;各种问题 </center></h1><h2 id="为什么叫这个名字呢？因为它霸气啊！"><a href="#为什么叫这个名字呢？因为它霸气啊！" class="headerlink" title="为什么叫这个名字呢？因为它霸气啊！"></a>为什么叫这个名字呢？因为它霸气啊！</h2><p>还在睡梦中的博主：一个什么都折腾但是又什么都折腾不好的宅，偶尔看看书，耍耍吃鸡。最喜欢的事莫过于睡觉了。  </p><h2 id="为什么不能评论文章呢？"><a href="#为什么不能评论文章呢？" class="headerlink" title="为什么不能评论文章呢？"></a>为什么不能评论文章呢？</h2><p>用<code>GitHub</code>账号登录就可以了哦  </p><h2 id="访问速度好慢哦···"><a href="#访问速度好慢哦···" class="headerlink" title="访问速度好慢哦···"></a>访问速度好慢哦···</h2><p>国内用<code>Coding Pages</code>访问速度比较快，国外用<code>Github Pages</code>访问速度比较快，可以在 <em>社交链接</em> 里面进行切换哦~_~  </p>]]></content>
-    </entry>
-    
-    <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      <content type="html"><![CDATA[]]></content>
     </entry>
     
     <entry>
