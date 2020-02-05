@@ -3,6 +3,15 @@
   
     
     <entry>
+      <title>2020.02.05博客更新说明</title>
+      <link href="/blog-update-info01/"/>
+      <url>/blog-update-info01/</url>
+      <content type="html"><![CDATA[<ol><li>原Coding Page已经失效，且无法删除，所以重新更换了域名并关闭了https访问（开启https会大幅度降低网站的访问速度）。</li><li>更新了ARIA主题，对原来一些失效的链接进行重定向。</li><li>更换了评论系统，由于Github业务调整，所以原来的Gitment评论系统换成Valine，所以原有的评论不会显示在页面上。请大家在评论的时候主动提交昵称和邮箱，这样才会接到回复提醒，也可以使用Github账号在原来的<a href="https://github.com/359303267/Gitment/issues" target="_blank" rel="noopener">https://github.com/359303267/Gitment/issues</a>链接上进行评论。</li></ol>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
       <title>记一次kindle Paperwhite3 拆机降级</title>
       <link href="/kindle-02/"/>
       <url>/kindle-02/</url>
@@ -131,13 +140,13 @@
       
         <tags>
             
+            <tag> Windows </tag>
+            
             <tag> WinPE </tag>
             
             <tag> U盘启动 </tag>
             
             <tag> 工具集 </tag>
-            
-            <tag> Windows </tag>
             
         </tags>
       
@@ -266,9 +275,9 @@
       
         <tags>
             
-            <tag> 瞎折腾 </tag>
-            
             <tag> 刷机 </tag>
+            
+            <tag> 瞎折腾 </tag>
             
             <tag> 经验 </tag>
             
@@ -344,29 +353,29 @@
     
     <entry>
       <title></title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<h1 id="关于博主-amp-各种问题"><a href="#关于博主-amp-各种问题" class="headerlink" title="关于博主&amp;各种问题 "></a><center>关于博主&amp;各种问题 </center></h1><h2 id="为什么叫这个名字呢？因为它霸气啊！"><a href="#为什么叫这个名字呢？因为它霸气啊！" class="headerlink" title="为什么叫这个名字呢？因为它霸气啊！"></a>为什么叫这个名字呢？因为它霸气啊！</h2><p>还在睡梦中的博主：一个什么都折腾但是又什么都折腾不好的宅，偶尔看看书，耍耍吃鸡。最喜欢的事莫过于睡觉了。  </p><h2 id="为什么不能评论文章呢？"><a href="#为什么不能评论文章呢？" class="headerlink" title="为什么不能评论文章呢？"></a>为什么不能评论文章呢？</h2><p>用<code>GitHub</code>账号登录就可以了哦  </p><h2 id="访问速度好慢哦···"><a href="#访问速度好慢哦···" class="headerlink" title="访问速度好慢哦···"></a>访问速度好慢哦···</h2><p>国内用<code>Coding Pages</code>访问速度比较快，国外用<code>Github Pages</code>访问速度比较快，可以在 <em>社交链接</em> 里面进行切换哦~_~  </p>]]></content>
-    </entry>
-    
-    <entry>
-      <title></title>
       <link href="/PEDonation/index.html"/>
       <url>/PEDonation/index.html</url>
       <content type="html"><![CDATA[<h1 id="https-359303267-github-io-PE"><a href="#https-359303267-github-io-PE" class="headerlink" title="https://359303267.github.io/PE/"></a><center><a href="https://359303267.github.io/PE/">https://359303267.github.io/PE/</a></center></h1><h1 id="一个不知道叫什么好的U盘启动工具集"><a href="#一个不知道叫什么好的U盘启动工具集" class="headerlink" title="一个不知道叫什么好的U盘启动工具集"></a><center>一个不知道叫什么好的U盘启动工具集</center></h1><h2 id="非常感谢以下赞助者"><a href="#非常感谢以下赞助者" class="headerlink" title="非常感谢以下赞助者"></a><center>非常感谢以下赞助者</center></h2><h3 id="（名单随机排序）"><a href="#（名单随机排序）" class="headerlink" title="（名单随机排序）"></a><center>（名单随机排序）</center></h3><table><thead><tr><th style="text-align:center"></th><th style="text-align:center"></th><th style="text-align:center"></th><th style="text-align:center"></th><th style="text-align:center"></th></tr></thead><tbody><tr><td style="text-align:center">Blood of SKY</td><td style="text-align:center">*宽明</td><td style="text-align:center"><a href="mailto:786521184@qq.com" target="_blank" rel="noopener">786521184@qq.com</a></td><td style="text-align:center">芋筅</td><td style="text-align:center">*光辉</td></tr><tr><td style="text-align:center">TonyYAO</td><td style="text-align:center"><em>雷　lev**</em>@gamil.com</td><td style="text-align:center">落弃</td><td style="text-align:center">2018-07-10微信赞助用户</td><td style="text-align:center">Singapore</td></tr><tr><td style="text-align:center">*震</td><td style="text-align:center">Alisren</td><td style="text-align:center">alcoholic</td><td style="text-align:center">源</td><td style="text-align:center">WXQ</td></tr><tr><td style="text-align:center">*敬龙</td><td style="text-align:center">mzg</td><td style="text-align:center">2018-08-30微信赞助用户</td><td style="text-align:center">成师</td><td style="text-align:center">铭豆</td></tr><tr><td style="text-align:center">195648521</td><td style="text-align:center">李伟华</td><td style="text-align:center">丹羽子</td><td style="text-align:center"><em>邓冲　zdc**</em>@163.com</td><td style="text-align:center">2018-03-18微信赞助用户</td></tr><tr><td style="text-align:center">洋</td><td style="text-align:center">执念っつ</td><td style="text-align:center">简单爱</td><td style="text-align:center">一清</td><td style="text-align:center">男人的骄傲</td></tr><tr><td style="text-align:center">2019-02-13微信赞助用户*💪🏻</td><td style="text-align:center">2019-04-21微信赞助用户*龙</td><td style="text-align:center">2019-05-27支付宝用户*祥博</td><td style="text-align:center">2019-07-19微信用户*è</td><td style="text-align:center">2019-07-20微信用户*红</td></tr><tr><td style="text-align:center">2019-07-22微信用户*秃</td><td style="text-align:center">2019-07-22支付宝用户*子骆</td><td style="text-align:center">2019-08-08微信用户*乐</td><td style="text-align:center">2019-08-09支付宝用户*靖</td><td style="text-align:center">2019-10-26支付宝用户*雷</td></tr><tr><td style="text-align:center">2019-11-03支付宝用户*清华</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr></tbody></table><h2 id="以及以下的无忧论坛用户："><a href="#以及以下的无忧论坛用户：" class="headerlink" title="以及以下的无忧论坛用户："></a><center>以及以下的无忧论坛用户：</center></h2><table><thead><tr><th style="text-align:right"></th><th style="text-align:left"></th><th style="text-align:right"></th><th style="text-align:left"></th></tr></thead><tbody><tr><td style="text-align:right"><code>wimboot</code>:</td><td style="text-align:left">非常棒的<a href="http://bbs.wuyou.net/forum.php?mod=viewthread&amp;tid=402673" target="_blank" rel="noopener">Win10PE</a>内核</td><td style="text-align:right"><code>立帮电子</code>:</td><td style="text-align:left">优质的<a href="http://bbs.wuyou.net/forum.php?mod=viewthread&amp;tid=397706" target="_blank" rel="noopener">一键备份还原工具</a> 以及<a href="http://bbs.wuyou.net/forum.php?mod=viewthread&amp;tid=403550" target="_blank" rel="noopener">WinPE生成器</a></td></tr><tr><td style="text-align:right"><code>2010kva</code>:</td><td style="text-align:left"><a href="http://bbs.wuyou.net/forum.php?mod=viewthread&amp;tid=364890" target="_blank" rel="noopener">界面友好的一键制作工具</a></td><td style="text-align:right"><code>wintoflash</code>:</td><td style="text-align:left">非常棒的Porteus 4.0 口袋Linux系统以及<a href="http://bbs.wuyou.net/forum.php?mod=viewthread&amp;tid=410086" target="_blank" rel="noopener">Grub2文件管理</a></td></tr><tr><td style="text-align:right"><code>jsgh1983</code>:</td><td style="text-align:left"><a href="http://bbs.wuyou.net/forum.php?mod=viewthread&amp;tid=365856" target="_blank" rel="noopener">Message启动菜单个性化制作工具</a></td><td style="text-align:right"><code>红毛樱木</code>:</td><td style="text-align:left">搜集大量<a href="http://bbs.wuyou.net/forum.php?mod=viewthread&amp;tid=372840" target="_blank" rel="noopener">网卡、显卡驱动</a></td></tr><tr><td style="text-align:right"><code>hhh333</code>:</td><td style="text-align:left">搜集整理的<a href="http://bbs.wuyou.net/forum.php?mod=viewthread&amp;tid=388395&amp;fromuid=570450" target="_blank" rel="noopener">NVME驱动程序</a></td><td style="text-align:right"><code>slore</code>:</td><td style="text-align:left"><a href="http://bbs.wuyou.net/forum.php?mod=viewthread&amp;tid=409685" target="_blank" rel="noopener">Wimbuilder2 PE生成器项目</a></td></tr><tr><td style="text-align:right"><code>sinoxer</code>:</td><td style="text-align:left"><a href="https://www.xyboot.com/usb3_drivers_smart_install/" target="_blank" rel="noopener">搜集整理的USB3.0驱动</a></td><td style="text-align:right"><code>Pauly</code>:</td><td style="text-align:left"><a href="http://bbs.wuyou.net/forum.php?mod=viewthread&amp;tid=157812&amp;extra=page%3D1" target="_blank" rel="noopener">XORBOOT Uefi: 多系统引导程序</a></td></tr></tbody></table><h2 id="好用的话，请作者喝杯茶吧🙂"><a href="#好用的话，请作者喝杯茶吧🙂" class="headerlink" title="好用的话，请作者喝杯茶吧🙂"></a><center>好用的话，请作者喝杯茶吧🙂</center></h2><div class="reward" id="reward"><br>  <button id="reward-button" class="button" disable="enable">打赏</button><br>  <div id="qr" class="qr" style="display: none;" aria-hidden="true"><br>    <div id="alipay"><br>      <img id="alipay_qr" src="/images/AliPay.jpg" alt="支付宝"><br>    </div><br>  </div><br></div>]]></content>
     </entry>
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      <content type="html"><![CDATA[]]></content>
+      <title></title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<h1 id="为什么我要叫这个名字呢？因为它霸气啊！"><a href="#为什么我要叫这个名字呢？因为它霸气啊！" class="headerlink" title="为什么我要叫这个名字呢？因为它霸气啊！"></a>为什么我要叫这个名字呢？因为它霸气啊！</h1><p>还在睡梦中的博主：一个什么都折腾但是又什么都折腾不好的宅，偶尔看看书，耍耍吃鸡。最喜欢的事莫过于睡觉了。  </p><h1 id="为什么不能评论文章呢？"><a href="#为什么不能评论文章呢？" class="headerlink" title="为什么不能评论文章呢？"></a>为什么不能评论文章呢？</h1><p>用<code>GitHub</code>账号登录就可以了哦  </p><h1 id="访问速度好慢哦···"><a href="#访问速度好慢哦···" class="headerlink" title="访问速度好慢哦···"></a>访问速度好慢哦···</h1><p>国内用<code>Coding Pages</code>访问速度比较快，国外用<code>Github Pages</code>访问速度比较快，可以在 <em>社交链接</em> 里面进行切换哦~_~  </p><h1 id="关于评论"><a href="#关于评论" class="headerlink" title="关于评论"></a>关于评论</h1><p>现评论系统已经更换问Valine，可以免注册进行评论，请大家在提交评论的时候主动留下昵称和邮箱，方便联系！</p>]]></content>
     </entry>
     
     <entry>
       <title>categories</title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
+      <content type="html"><![CDATA[]]></content>
+    </entry>
+    
+    <entry>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
