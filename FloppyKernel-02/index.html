@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -35,7 +35,7 @@
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     
     
-    <link rel="alternate" href="/atom.xml" title="小小小日天的博客" type="application/atom+xml" />
+    <link rel="alternate" href="/atom.xml" title="小小小日天的博客" type="application/atom+xml">
     
     
     <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
@@ -159,7 +159,7 @@
     <script defer type="text/javascript" src="/js/custom.js"></script>
     <title>Floppy内核关闭温控教程 | 小小小日天的博客 - 瞧！这里有个不知道叫什么好的小玩意！</title>
   </head>
-  <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN"  data-spy="scroll" data-target=".list-group">
+  <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN" data-spy="scroll" data-target=".list-group">
     
 <header id="header" class="header" style="background: #33363b;">
   <div class="container">
@@ -188,7 +188,7 @@
         
         <li role="menuitem"><a href="/about/"><i class="fas fa-user-edit"></i><span class="menu-text">关于</span></a></li>
         
-        <li role="menuitem"><a href="/PE/"><i class="fab fa-usb"></i><span class="menu-text">PE工具集</span></a></li>
+        <li role="menuitem"><a href="/PE/"><i class="fab fa-usb"></i><span class="menu-text">U启工具集</span></a></li>
         
       </ul>
     </nav>
@@ -242,11 +242,11 @@
 <li>按照上一篇<a href="/FloppyKernel-01">Floppy 内核关闭背光调节器的方法</a>介绍的方法，我们直接打开<strong>ramdisk</strong>目录里的<strong>init.floppy.rc</strong>文件，我们开始修改脚本。  </li>
 <li>我们可以看到类似这种的配置，这些数据便是Floppy内核的温控配置  </li>
 </ul>
-<p><img src="/images/FloppyKernel-02/01.png" alt="">  </p>
+<p><img src="/images/FloppyKernel-02/01.png" alt>  </p>
 <ul>
 <li>还要注意这里，这两个<em>on boot</em>和<em>on charger</em>分别代表启动时和充电时的状态，所以如果要修改启动时的温度控制代码，就修改<em>on boot</em>下面的，同理，想要修改充电时的温度控制代码，就修改<em>on charger</em>下面的。  </li>
 </ul>
-<p><img src="/images/FloppyKernel-02/02.png" alt=""></p>
+<p><img src="/images/FloppyKernel-02/02.png" alt></p>
 <ul>
 <li>下面这一行代码表示系统启动完成要修改的配置，所以当手机正常使用并且没有充电时，是这一行代码下面的配置在起作用。  </li>
 </ul>
@@ -255,7 +255,7 @@
 <li>如果我们只是想关闭内核的温控，那么就好办了，直接将<br>文件中所有的这样一行代码后面的<strong>1</strong>改为<strong>0</strong>就好了。</li>
 </ul>
 <figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">write /sys/kernel/msm_thermal/enabled 1<br></code></pre></td></tr></table></figure>
-<p>改为如图这样就好了，CPU烧到100度都不降频，贼鸡儿爽！<br><img src="/images/FloppyKernel-02/03.png" alt=""></p>
+<p>改为如图这样就好了，CPU烧到100度都不降频，贼鸡儿爽！<br><img src="/images/FloppyKernel-02/03.png" alt></p>
 
     </main>
     <footer class="post-footer">
@@ -283,7 +283,7 @@
     
     
     <div id="alipay">
-      <img id="alipay_qr" src="/images/AliPay.jpg" alt="支付宝"/>
+      <img id="alipay_qr" src="/images/AliPay.jpg" alt="支付宝">
       <span>支付宝</span>
     </div>
     
@@ -352,7 +352,7 @@
   
   <div class="search">
     <div class="form-group">
-      <i class="fas fa-search"></i><input type="search" id="search-input" name="q" results="0" placeholder="搜索" class="form-control"/>
+      <i class="fas fa-search"></i><input type="search" id="search-input" name="q" results="0" placeholder="搜索" class="form-control">
     </div>
   </div>
   <div class="search-result-box" id="search-result"></div>
@@ -412,7 +412,7 @@
     
     <hr>
     <div class="social-link sidebar-item">
-      <div><i class="far fa-address-card"></i>社交链接</p></div>
+      <div><i class="far fa-address-card"></i>社交链接<p></p></div>
       <ul>
         
         <li><i class="fas fa-envelope"></i><a href="mailto:359303267@qq.com" target="_blank">E-Mail</a></li>
