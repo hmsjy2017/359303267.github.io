@@ -245,6 +245,7 @@
 <li>PE内核中的注册表是PE的核心部分，每个大神制作的PE内核都有他们独到的部分，可谓是百家齐放。这部分很难，网上搜集到的资料也比较少。我曾经也是有自己精简注册表的想法的，但是发现这样太耗费时间，不如直接用别人修改好的，站在巨人的肩膀上可以少费力很多。我用的就是无忧论坛<strong>wimboot</strong>大神制作好的内核，Win10x86和x64都有，而且他的注册表精简的非常到位，我觉得不错，在此表示致敬。  </li>
 <li>下面就是外置软件部分的注册表了，当然是用<strong>RegShot</strong>这个工具，这个工具可以非常快速方便的对比出安装软件之前和安装之后的注册表和Windows目录中文件的变化，并且生成报告文件，这样就可以讲安装式的软件变成绿色免安装版的，就可以放进PE中啦。RegShot生成的TXT报告文件其实是reg文件，可以直接修改后缀为.reg，双击就可以直接导进目录了。<br>还有一种导入reg格式注册表的方法，就是利用<strong>注册表转换工具</strong>，将reg格式的注册表文件转换成cmd格式或者inf格式，利用cmd命令就可以导入注册表了。  </li>
 <li>导入reg格式注册表的命令行： <figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">regedit /s X:\\Windows\system32\RegPE.reg<br></code></pre></td></tr></table></figure>
+
 </li>
 </ul>
 <h1 id="GRUB引导部分"><a href="#GRUB引导部分" class="headerlink" title="GRUB引导部分"></a>GRUB引导部分</h1><ul>

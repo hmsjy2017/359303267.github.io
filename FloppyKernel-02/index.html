@@ -251,10 +251,12 @@
 <li>下面这一行代码表示系统启动完成要修改的配置，所以当手机正常使用并且没有充电时，是这一行代码下面的配置在起作用。  </li>
 </ul>
 <figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">on property:sys.boot_completed=1<br></code></pre></td></tr></table></figure>
+
 <ul>
 <li>如果我们只是想关闭内核的温控，那么就好办了，直接将<br>文件中所有的这样一行代码后面的<strong>1</strong>改为<strong>0</strong>就好了。</li>
 </ul>
 <figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">write /sys/kernel/msm_thermal/enabled 1<br></code></pre></td></tr></table></figure>
+
 <p>改为如图这样就好了，CPU烧到100度都不降频，贼鸡儿爽！<br><img src="/images/FloppyKernel-02/03.png" alt></p>
 
     </main>

@@ -243,6 +243,7 @@
 <p>既然是以刷机包的形式给用户使用的，我们可以从它的刷机脚本开始研究。<br>我们打开<strong>/META-INF/com/google/android/update-binary</strong>文件，可以看到里面有很多操作是使用<strong>anykernel.sh</strong>脚本来操作的<br><img src="/images/FloppyKernel-01/02.png" alt="img"></p>
 <p>那我们就来研究一下这个脚本。打开这个脚本之后可以发现有这样一行  </p>
 <figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">nsert_line init.rc &quot;import /init.floppy.rc&quot; before &quot;import /init.environ.rc&quot; &quot;import /init.floppy.rc&quot;;<br></code></pre></td></tr></table></figure>
+
 <p><img src="/images/FloppyKernel-01/03.png" alt="img"></p>
 <p>很显然这句有很多的.rc文件，rc文件属于命令脚本，我们可以将关闭背光调节器的命令写在这些脚本里就好了。  </p>
 <p>另外可以发现这些.rc文件都是在一个叫做<strong>ramdisk</strong>的文件夹里面，就可以肯定是可以操作内核的脚本无疑了，因为内核会在开机之前加载到内存里，而ramdisk就是<code>内存磁盘</code>的意思。  </p>

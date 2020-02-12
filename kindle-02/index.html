@@ -251,10 +251,12 @@
 </li>
 </ol>
 <figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">bist<br></code></pre></td></tr></table></figure>
+
 <ol start="5">
 <li>接着再输入命令进入fastboot模式：  </li>
 </ol>
 <figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">fastboot<br></code></pre></td></tr></table></figure>
+
 <ol start="6">
 <li><p>使用<code>zadig</code>安装驱动，驱动类型选择<code>libusb</code>  </p>
 </li>
@@ -262,6 +264,7 @@
 </li>
 </ol>
 <figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">kindletool extract [固件.bin] [输出文件夹]<br></code></pre></td></tr></table></figure>
+
 <p><strong>解包输出的uImage文件就是内核，可以直接刷入，rootfs.img.gz是文件系统，需要使用7-zip或者winrar对rootfs.img.gz再次解压出rootfs.img才可以刷入。</strong>  </p>
 <ol start="8">
 <li><p>在cmd里打开fastboot工具，这时候就和手机刷机是一样的了，可以只刷内核不刷系统，也可以只刷系统不换内核。  </p>
@@ -270,14 +273,17 @@
 </li>
 </ol>
 <figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">fastboot flash kernel [uImage文件路径]<br></code></pre></td></tr></table></figure>
+
 <ol start="10">
 <li>再刷系统：  </li>
 </ol>
 <figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">fastboot flash system [rootfs.img文件路径]<br></code></pre></td></tr></table></figure>
+
 <ol start="11">
 <li>然后输入：  </li>
 </ol>
 <figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">fastboot reboot<br></code></pre></td></tr></table></figure>
+
 <p><strong>重启kindle，就可以发现系统已经降回来了，最好再重置一下系统，防止文件不匹配导致其他问题。下面该越狱越狱，该折腾折腾。</strong>  </p>
 <ol start="12">
 <li>过程结束，Over~  </li>
