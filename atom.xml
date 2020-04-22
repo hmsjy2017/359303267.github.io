@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://359303267.github.io/"/>
-  <updated>2020-02-05T07:45:01.958Z</updated>
+  <updated>2020-04-22T13:04:22.685Z</updated>
   <id>https://359303267.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>(2020)一个不知道叫什么好的U盘启动工具集</title>
+    <link href="https://359303267.github.io/PE/"/>
+    <id>https://359303267.github.io/PE/</id>
+    <published>2020-04-23T09:22:54.000Z</published>
+    <updated>2020-04-22T13:04:22.685Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;感谢&quot;&gt;&lt;a href=&quot;#感谢&quot; class=&quot;headerlink&quot; title=&quot;感谢&quot;&gt;&lt;/a&gt;感谢&lt;/h1&gt;&lt;p&gt;​        没错，这是最后一个版本，以后不再更新。&lt;br&gt;​       
+        
+      
+    
+    </summary>
+    
+      <category term="WinPE" scheme="https://359303267.github.io/categories/WinPE/"/>
+    
+    
+      <category term="WinPE" scheme="https://359303267.github.io/tags/WinPE/"/>
+    
+      <category term="U盘启动" scheme="https://359303267.github.io/tags/U%E7%9B%98%E5%90%AF%E5%8A%A8/"/>
+    
+      <category term="工具集" scheme="https://359303267.github.io/tags/%E5%B7%A5%E5%85%B7%E9%9B%86/"/>
+    
+      <category term="Windows" scheme="https://359303267.github.io/tags/Windows/"/>
+    
+  </entry>
   
   <entry>
     <title>2020.02.05博客更新说明</title>
@@ -177,38 +209,6 @@
   </entry>
   
   <entry>
-    <title>一个不知道叫什么好的U盘启动工具集</title>
-    <link href="https://359303267.github.io/PE/"/>
-    <id>https://359303267.github.io/PE/</id>
-    <published>2019-08-08T09:22:54.000Z</published>
-    <updated>2019-12-31T02:26:52.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;先说版权&quot;&gt;&lt;a href=&quot;#先说版权&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="WinPE" scheme="https://359303267.github.io/categories/WinPE/"/>
-    
-    
-      <category term="WinPE" scheme="https://359303267.github.io/tags/WinPE/"/>
-    
-      <category term="U盘启动" scheme="https://359303267.github.io/tags/U%E7%9B%98%E5%90%AF%E5%8A%A8/"/>
-    
-      <category term="工具集" scheme="https://359303267.github.io/tags/%E5%B7%A5%E5%85%B7%E9%9B%86/"/>
-    
-      <category term="Windows" scheme="https://359303267.github.io/tags/Windows/"/>
-    
-  </entry>
-  
-  <entry>
     <title>用PCB板做一把尺子</title>
     <link href="https://359303267.github.io/PCB_Ruler/"/>
     <id>https://359303267.github.io/PCB_Ruler/</id>
@@ -232,9 +232,9 @@
     
       <category term="瞎折腾" scheme="https://359303267.github.io/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/"/>
     
-      <category term="PCB" scheme="https://359303267.github.io/tags/PCB/"/>
-    
       <category term="经验" scheme="https://359303267.github.io/tags/%E7%BB%8F%E9%AA%8C/"/>
+    
+      <category term="PCB" scheme="https://359303267.github.io/tags/PCB/"/>
     
   </entry>
   
